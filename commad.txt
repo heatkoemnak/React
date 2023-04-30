@@ -1,0 +1,15 @@
+set up project 
+1. npx create-react-app my-app
+Delete all files in the src/ folder of the new project
+2. cd my-app
+   cd src
+   del *
+   cd ..
+
+3. Add a file named index.css in the src/ folder with this CSS code.
+4. Add a file named index.js in the src/ folder with this JS code.
+5. Add these three lines to the top of index.js in the src/ folder:
+    import React from 'react';
+    import ReactDOM from 'react-dom/client';
+    import './index.css';
+run "npm start" in the project folder and open http://localhost:3000 in the browser, you should see an empty tic-tac-toe field.
