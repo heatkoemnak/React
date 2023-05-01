@@ -1,37 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-const navbar = (
-  <nav>
-    <ul>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="about.html">About</a>
-      </li>
-      <li>
-        <a href="contact.html">Contact</a>
-      </li>
-  
-    </ul>
-  </nav>
+ReactDOM.render(
+
+  <React.StrictMode>
+
+    <App />
+
+
+  </React.StrictMode>,
+
+  document.getElementById('root')
 );
 
-const footer = (
-    <footer>
-        <p>© 2020</p>
-    </footer>
-);
+reportWebVitals();
 
-const app = (
-    <div>
-        {navbar}
-        <h1>My App</h1>
-        <p>This is my app</p>
-        {footer}
-    </div>
-);
 
-ReactDOM.render(app, document.getElementById("root"));
+
+
