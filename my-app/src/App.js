@@ -15,14 +15,9 @@ function App() {
         <Route path="/Shop" element={<ShopScreen />} />
         <Route path="/Contact" element={<ContactScreen />} />
         <Route path="/Team" element={<TeamScreen />} />
-
-       
-
     </Routes>
     </BrowserRouter>
 
-    
-    
   );
 }
 
