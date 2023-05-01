@@ -3,21 +3,55 @@ import ServiceScreen from "../src/screen/Service/ServiceScreen";
 import ShopScreen from "../src/screen/Shop/ShoScreen";
 import ContactScreen from "../src/screen/Contact/ContactScreen";
 import TeamScreen from "../src/screen/Team/TeamScreen";
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
+import "./screen/Home/HomeScreen.css"
 
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
-        <Route path="/" element={<HomeScreen />} />
-        <Route path="/Service" element={<ServiceScreen />} />
-        <Route path="/Shop" element={<ShopScreen />} />
-        <Route path="/Contact" element={<ContactScreen />} />
-        <Route path="/Team" element={<TeamScreen />} />
-    </Routes>
-    </BrowserRouter>
+      <div className="App">
+        <div className="Navbar">
+          <div className="logo">
+            <h1>Anti WastE</h1>
+          </div>
 
+          <div className="menu">
+            <Link className="menu-item" to="/">
+              Home
+            </Link>
+            <Link className="menu-item" to="/Service">
+              Service
+            </Link>
+            <Link className="menu-item" to="/Shop">
+              Shop
+            </Link>
+            <Link className="menu-item" to="/Contact">
+              Contact
+            </Link>
+            <Link className="menu-item" to="/Team">
+              Team
+            </Link>
+          </div>
+          <div className="Nav-icon">
+            <i class="bx bx-search icon"></i>
+            <i class='bx bxs-cart-download icon'></i>
+            
+
+
+
+          </div>
+        </div>
+
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/Service" element={<ServiceScreen />} />
+          <Route path="/Shop" element={<ShopScreen />} />
+          <Route path="/Contact" element={<ContactScreen />} />
+          <Route path="/Team" element={<TeamScreen />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

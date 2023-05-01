@@ -1,0 +1,45 @@
+:root {
+  --green-primary-color: rgb(154, 213, 2);
+  --white-secondary-color: #ffffff;
+  --black-tertiary-color: #000000;
+  --navbar-backround-color: #f5f5f5;
+  --yellow-text-color: #ffd900;
+  --menu-item-color: #848484;
+  --dark-green-color: #28400c;
+}
+.Home-text {
+  font-size: 2rem;
+  color: var(--green-primary-color);
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 30px;
+}
+.campagn {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  background-color: var(--green-primary-color);
+  color: var(--green-primary-color);
+  cursor: pointer;
+  padding: 5px;
+} 
+.feature {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-green-color);
+  width: 25%;
+}
+.feature-list {
+  text-transform: uppercase;
+  padding: 10px;
+  color: var(--white-secondary-color);
+}
+.location {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--green-primary-color);
+  color: var(--white-secondary-color);
+  width: 95%;
+  margin: 0 auto;
+}
