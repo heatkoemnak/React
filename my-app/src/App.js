@@ -5,43 +5,59 @@ import ContactScreen from "../src/screen/Contact/ContactScreen";
 import TeamScreen from "../src/screen/Team/TeamScreen";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import "./screen/Home/HomeScreen.css"
+import "./screen/Home/HomeScreen.css";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <div className="Navbar">
-          <div className="logo">
-            <h1>Anti WastE</h1>
+        <h3 className="header">RECYCLING WEBSITE</h3>
+        <nav className="nav-bar">
+          <h1 className="logo">Anti WastE</h1>
+          <div className="nav-container">
+            <li>
+              <Link className="item" to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className="item" to="/Service">
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link className="item" to="/Shop">
+                Shop
+              </Link>
+            </li>
+            <li>
+              <Link className="item" to="/Contact">
+                Contact us
+              </Link>
+            </li>
+            <li>
+              <Link className="item" to="/Team">
+                Team
+              </Link>
+            </li>
+          </div>
+          <div className="nav-icon" id="nav-icon">
+            <i className="bx bx-search btn-search" id="search"></i>
+            <i className="bx bxs-cart-download icon" id="shopping-cart"></i>
+
+            <div className="sign-account">
+              <div className="log-to-signin">
+                <p>Hello👋</p>
+                <Link href="#" className="login" id="cta">
+                  Sign In
+                </Link>
+              </div>
+              <p>Account</p>
+            </div>
           </div>
 
-          <div className="menu">
-            <Link className="menu-item" to="/">
-              Home
-            </Link>
-            <Link className="menu-item" to="/Service">
-              Service
-            </Link>
-            <Link className="menu-item" to="/Shop">
-              Shop
-            </Link>
-            <Link className="menu-item" to="/Contact">
-              Contact
-            </Link>
-            <Link className="menu-item" to="/Team">
-              Team
-            </Link>
-          </div>
-          <div className="Nav-icon">
-            <i class="bx bx-search icon"></i>
-            <i class='bx bxs-cart-download icon'></i>
-            
-
-
-
-          </div>
-        </div>
+          
+        </nav>
 
         <Routes>
           <Route path="/" element={<HomeScreen />} />

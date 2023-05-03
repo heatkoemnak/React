@@ -1,12 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import image1 from "../asset/s005.jpg";
+import image2 from "../asset/s002.png";
+import image3 from "../asset/s003.png";
+import image4 from "../asset/s001.png";
 
 const HomeScreen = () => {
+  const [selectImage, setSelectImage] = useState(1);
+  const [allImage, setAllImage] = useState([image1, image2, image3, image4]);
+
+  //set auto slider
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      if (selectImage < allImage.length - 1) {
+        setSelectImage(selectImage + 1);
+      }
+      if (selectImage === allImage.length - 1) {
+        setSelectImage(0);
+      }
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [selectImage]);
+
   return (
     <div className="campagn">
       <div className="feature">
         <Link className="feature-list" to="/">
-          Sell
+          Sell Your Products
         </Link>
         <Link className="feature-list" to="/Service">
           Service Provider
@@ -15,16 +36,19 @@ const HomeScreen = () => {
           Nearby Enterprise
         </Link>
         <div className="location">
-          <i class="bx bx-location-plus"></i>
-          <i class="bx bx-chevron-up"></i>
+          <i className="bx bx-location-plus"></i>
+          <i className="bx bx-chevron-up"></i>
           <p>Location</p>
           <p>សង្កាត់ទឹកថ្លា Sangkat Tuek Thla ភ្នំពេញ</p>
           <p>10km 30s</p>
-          <i class="bx bx-chevron-down "></i>
+          <i className="bx bx-chevron-down "></i>
         </div>
         <Link className="feature-list" to="/Contact">
           ALL PRODUCTS TYPE
         </Link>
+      </div>
+      <div className="banner">
+        <img src={allImage[selectImage]} alt="all" />
       </div>
     </div>
   );

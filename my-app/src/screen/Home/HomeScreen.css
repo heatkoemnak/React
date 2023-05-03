@@ -6,6 +6,7 @@
   --yellow-text-color: #ffd900;
   --menu-item-color: #848484;
   --dark-green-color: #28400c;
+  --middle-green-color:#305704;
 }
 .Home-text {
   font-size: 2rem;
@@ -15,10 +16,11 @@
   padding: 30px;
 }
 .campagn {
+  display: flex;
   width: 80%;
   margin: 0 auto;
   font-size: 1.5rem;
-  background-color: var(--green-primary-color);
+  background-color: var(--white-secondary-color);
   color: var(--green-primary-color);
   cursor: pointer;
   padding: 5px;
@@ -27,11 +29,24 @@
   display: flex;
   flex-direction: column;
   background-color: var(--dark-green-color);
-  width: 25%;
+  width: 20%;
 }
 .feature-list {
   text-transform: uppercase;
-  padding: 10px;
+  padding: 25px;
+  color: var(--white-secondary-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-bottom:  1px solid var(--yellow-text-color);
+
+  border-top:  1px solid var(--yellow-text-color);
+
+  
+ 
+  
+}
+.feature-list:hover{
+  background-color:var(--middle-green-color);
   color: var(--white-secondary-color);
 }
 .location {
@@ -42,4 +57,22 @@
   color: var(--white-secondary-color);
   width: 95%;
   margin: 0 auto;
+}
+
+.banner{
+  position: relative;
+  display: flex;
+  width: 80%;
+  background-color: #f5f5f5;
+}
+.banner img{
+  width: 100%;
+}
+.banner-button{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-content: end;
+  bottom: 0;
 }
