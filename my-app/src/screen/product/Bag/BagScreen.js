@@ -28,6 +28,10 @@ import related11 from "../../../screen/asset/related-to-recycle11.jpg";
 function BagScreen() {
   return (
     <>
+      <div className="search-product">
+        <input type="text" placeholder="Search Product" />
+        <button className="search-btn">Search</button>
+      </div>
       <section class="Product" id="product">
         <div class="product-container" id="product-container">
           <div class="product-info" id="product-info">
@@ -209,7 +213,7 @@ function BagScreen() {
           </div>
         </div>
       </section>
-      <Related/>
+      <Related />
       <Footer />
     </>
   );

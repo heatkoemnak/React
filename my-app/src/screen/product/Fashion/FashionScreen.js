@@ -27,6 +27,10 @@ import related11 from "../../../screen/asset/related-to-recycle11.jpg";
 function FashionScreen() {
   return (
     <>
+      <div className="search-product">
+        <input type="text" placeholder="Search Product" />
+        <button className="search-btn">Search</button>
+      </div>
       <section className="Product" id="product">
         <div className="product-container" id="product-container">
           <div className="product-info" id="product-info">
