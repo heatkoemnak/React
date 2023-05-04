@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import { useState } from "react";
 import image1 from "../asset/s005.jpg";
 import image2 from "../asset/s002.png";
@@ -127,9 +128,117 @@ const HomeScreen = () => {
         </div>
       </div>
       <Shoes />
+      <Watches />
+      <Fashion />
+      <Bags />
+      <Related />
+      <Footer />
     </>
   );
 };
+function Footer() {
+  return (
+    <footer>
+      <div class="footer-container">
+        <div class="footer-menu">
+          <div class="footer-menu-item">
+            <h2>Menu</h2>
+            <Link href="#">Home</Link>
+            <Link href="#">About</Link>
+            <Link href="#">Service</Link>
+            <Link href="#">Product</Link>
+            <Link href="#">Contact</Link>
+          </div>
+          <div class="footer-menu-item">
+            <h2>Contact Info</h2>
+            <Link href="#">+855 977 304 279</Link>
+            <Link href="#">heatkoemnak@gamil.com</Link>
+            <Link href="#">Pnom penh,Cambodia-400104</Link>
+          </div>
+          <div class="footer-menu-item">
+            <h2>Follow Us</h2>
+            <Link href="#">Facebook</Link>
+            <Link href="#">Instagram</Link>
+            <Link href="#">Twitter</Link>
+            <Link href="#">Youtube</Link>
+            <Link href="#">Linkedin</Link>
+          </div>
+          <div class="footer-menu-item">
+            <h2>Legal</h2>
+            <Link href="#">Terms of use</Link>
+            <Link href="#">Privacy policy</Link>
+            <Link href="#">Cookies</Link>
+          </div>
+        </div>
+        <div class="footer-social-media">
+          <Link href="#">
+            <i class="bx bxl-facebook"></i>
+          </Link>
+          <Link href="#">
+            <i class="bx bxl-instagram"></i>
+          </Link>
+          <Link href="#">
+            <i class="bx bxl-twitter"></i>
+          </Link>
+          <Link href="#">
+            <i class="bx bxl-youtube"></i>
+          </Link>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+function Related() {
+  return (
+    <div class="Related">
+      <h2>Related Collection</h2>
+      <div class="related-container">
+        <div class="wrape-content">
+          <div class="image">
+            <img src={related11} alt="" />
+          </div>
+          <div class="related-text">
+            <h3>Recycle</h3>
+            <div class="photos-related">
+              <p>693 photos</p>
+              <p>Created by Mel Hammer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="related-container">
+        <div class="wrape-content">
+          <div class="image">
+            <img src={related2} alt="" />
+          </div>
+          <div class="related-text">
+            <h3>Texture/Plastic</h3>
+            <div class="photos-related">
+              <p>1.1k photos</p>
+              <p>Created by Mixer X</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="related-container">
+        <div class="wrape-content">
+          <div class="image">
+            <img src={related5} alt="" />
+          </div>
+          <div class="related-text">
+            <h3>Going Green, Save the Earth, Climate Change</h3>
+            <div class="photos-related">
+              <p>2.3k photos</p>
+              <p>Created by Gen Alert</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function Materails() {
   return (
@@ -168,6 +277,431 @@ function Materails() {
         <p>Plastic</p>
       </div>
     </div>
+  );
+}
+function Watches() {
+  return (
+    <section class="Product" id="product">
+      <div class="product-container" id="product-container">
+        <div class="product-info" id="product-info">
+          <img class="product-image" id="product-image" src={watch5} alt="" />
+          <div class="product-text">
+            <div class="name-price">
+              <h3 class="product-name">Oris Aqius Date</h3>
+              <p class="product-price">150.0$</p>
+            </div>
+            <p class="product-details">
+              Product product-details dverbgern erhehtr erehge
+            </p>
+            <div class="product-card" id="card">
+              <div class="star">
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <i class="bx bx-shopping-bag add-to-cart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product-info" id="product-info">
+          <img class="product-image" id="product-image" src={watch6} alt="" />
+          <div class="product-text">
+            <div class="name-price">
+              <h3 class="product-name">Suunto 5 Peak Mist Blue</h3>
+              <p class="product-price">80.0$</p>
+            </div>
+            <p class="product-details">
+              Product product-details dverbgern erhehtr erehge
+            </p>
+            <div class="product-card" id="card">
+              <div class="star">
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <i class="bx bx-shopping-bag add-to-cart"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-info" id="product-info">
+          <img class="product-image" id="product-image" src={watch7} alt="" />
+          <div class="product-text">
+            <div class="name-price">
+              <h3 class="product-name">Radley ladies Strap</h3>
+              <p class="product-price">60.0$</p>
+            </div>
+            <p class="product-details">
+              Product product-details dverbgern erhehtr erehge
+            </p>
+            <div class="product-card" id="card">
+              <div class="star">
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <i class="bx bx-shopping-bag add-to-cart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="product-info" id="product-info">
+          <img class="product-image" id="product-image" src={watch8} alt="" />
+          <div class="product-text">
+            <div class="name-price">
+              <h3 class="product-name">YA157304</h3>
+              <p class="product-price">30.0$</p>
+            </div>
+            <p class="product-details">
+              Product product-details dverbgern erhehtr erehge
+            </p>
+            <div class="product-card" id="card">
+              <div class="star">
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <i class="bx bx-shopping-bag add-to-cart"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Fashion() {
+  return (
+    <>
+      <section className="Product" id="product">
+        <div className="product-container" id="product-container">
+          <div className="product-info" id="product-info">
+            <img
+              className="product-image"
+              id="product-image"
+              src={fashion2}
+              alt=""
+            />
+            <div className="product-text">
+              <div className="name-price">
+                <h3 className="product-name">Jacket Suit</h3>
+                <p className="product-price">$10.00</p>
+              </div>
+              <p className="product-details">
+                Product product-details dverbgern erhehtr erehge
+              </p>
+              <div className="product-card" id="card">
+                <div className="star">
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bxs-star-half"></i>
+                </div>
+                <i className="bx bx-shopping-bag add-to-cart"></i>
+              </div>
+            </div>
+          </div>
+          <div className="product-info" id="product-info">
+            <img
+              className="product-image"
+              id="product-image"
+              src={fashion3}
+              alt=""
+            />
+            <div className="product-text">
+              <div className="name-price">
+                <h3 className="product-name">Weather Jiut</h3>
+                <p className="product-price">$20.0</p>
+              </div>
+              <p className="product-details">
+                Product product-details dverbgern erhehtr erehge
+              </p>
+              <div className="product-card" id="card">
+                <div className="star">
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bxs-star-half"></i>
+                </div>
+                <i className="bx bx-shopping-bag add-to-cart"> </i>
+              </div>
+            </div>
+          </div>
+          <div className="product-info" id="product-info">
+            <img
+              className="product-image"
+              id="product-image"
+              src={fashion4}
+              alt=""
+            />
+            <div className="product-text">
+              <div className="name-price">
+                <h3 className="product-name">Zero Waste Daniel</h3>
+                <p className="product-price">$50.0</p>
+              </div>
+              <p className="product-details">
+                Product product-details dverbgern erhehtr erehge
+              </p>
+              <div className="product-card" id="card">
+                <div className="star">
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bxs-star-half"></i>
+                </div>
+                <i className="bx bx-shopping-bag add-to-cart"></i>
+              </div>
+            </div>
+          </div>
+          <div className="product-info" id="product-info">
+            <img
+              className="product-image"
+              id="product-image"
+              src={fashion5}
+              alt=""
+            />
+            <div className="product-text">
+              <div className="name-price">
+                <h3 className="product-name">Bomber Jacket</h3>
+                <p className="product-price">20.50$</p>
+              </div>
+              <p className="product-details">
+                Product product-details dverbgern erhehtr erehge
+              </p>
+              <div className="product-card" id="card">
+                <div className="star">
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bxs-star-half"></i>
+                </div>
+                <i className="bx bx-shopping-bag add-to-cart"></i>
+              </div>
+            </div>
+          </div>
+          <div className="product-info" id="product-info">
+            <img
+              className="product-image"
+              id="product-image"
+              src={fashion6}
+              alt=""
+            />
+            <div className="product-text">
+              <div className="name-price">
+                <h3 className="product-name">Bellair Jecket</h3>
+                <p className="product-price">15.50$</p>
+              </div>
+              <p className="product-details">
+                Product product-details dverbgern erhehtr erehge
+              </p>
+              <div className="product-card" id="card">
+                <div className="star">
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bxs-star-half"></i>
+                </div>
+                <i className="bx bx-shopping-bag add-to-cart"></i>
+              </div>
+            </div>
+          </div>
+          <div className="product-info" id="product-info">
+            <img
+              className="product-image"
+              id="product-image"
+              src={fashion7}
+              alt=""
+            />
+            <div className="product-text">
+              <div className="name-price">
+                <h3 className="product-name">Tunic Tress</h3>
+                <p className="product-price">10.50$</p>
+              </div>
+              <p className="product-details">
+                Product product-details dverbgern erhehtr erehge
+              </p>
+              <div className="product-card" id="card">
+                <div className="star">
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bxs-star-half"></i>
+                </div>
+                <i className="bx bx-shopping-bag add-to-cart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div className="product-info" id="product-info">
+            <img
+              className="product-image"
+              id="product-image"
+              src={fashion8}
+              alt=""
+            />
+            <div className="product-text">
+              <div className="name-price">
+                <h3 className="product-name">Estle Mazonir</h3>
+                <p className="product-price">20.30$</p>
+              </div>
+              <p className="product-details">
+                Recycle clothes three set and free size 45Kg - 100Kg.
+              </p>
+              <div className="product-card" id="card">
+                <div className="star">
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bxs-star-half"></i>
+                </div>
+                <i className="bx bx-shopping-bag add-to-cart"></i>
+              </div>
+            </div>
+          </div>
+          <div className="product-info" id="product-info">
+            <img
+              className="product-image"
+              id="product-image"
+              src={fashion9}
+              alt=""
+            />
+            <div className="product-text">
+              <div className="name-price">
+                <h3 className="product-name">North Face Jacket</h3>
+                <p className="product-price">30.0$</p>
+              </div>
+              <p className="product-details">
+                Product product-details dverbgern erhehtr erehge
+              </p>
+              <div className="product-card" id="card">
+                <div className="star">
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bx-star"></i>
+                  <i className="bx bxs-star-half"></i>
+                </div>
+                <i className="bx bx-shopping-bag add-to-cart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+function Bags() {
+  return (
+    <>
+      <section class="Product" id="product">
+        <div class="product-container" id="product-container">
+          <div class="product-info" id="product-info">
+            <img class="product-image" id="product-image" src={bag8} alt="" />
+            <div class="product-text">
+              <div class="name-price">
+                <h3 class="product-name">Jecket Treamvelet</h3>
+                <p class="product-price">150.0$</p>
+              </div>
+              <p class="product-details">
+                Product product-details dverbgern erhehtr erehge
+              </p>
+              <div class="product-card" id="card">
+                <div class="star">
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-to-cart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product-info" id="product-info">
+            <img class="product-image" id="product-image" src={bag7} alt="" />
+            <div class="product-text">
+              <div class="name-price">
+                <h3 class="product-name">Mini Luvis</h3>
+                <p class="product-price">80.0$</p>
+              </div>
+              <p class="product-details">
+                Product product-details dverbgern erhehtr erehge
+              </p>
+              <div class="product-card" id="card">
+                <div class="star">
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-to-cart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-info" id="product-info">
+            <img class="product-image" id="product-image" src={bag5} alt="" />
+            <div class="product-text">
+              <div class="name-price">
+                <h3 class="product-name">Li Maton</h3>
+                <p class="product-price">60.0$</p>
+              </div>
+              <p class="product-details">
+                Product product-details dverbgern erhehtr erehge
+              </p>
+              <div class="product-card" id="card">
+                <div class="star">
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-to-cart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product-info" id="product-info">
+            <img class="product-image" id="product-image" src={bag6} alt="" />
+            <div class="product-text">
+              <div class="name-price">
+                <h3 class="product-name">Luvis Jecket</h3>
+                <p class="product-price">30.0$</p>
+              </div>
+              <p class="product-details">
+                Product product-details dverbgern erhehtr erehge
+              </p>
+              <div class="product-card" id="card">
+                <div class="star">
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bx-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <i class="bx bx-shopping-bag add-to-cart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 
@@ -285,398 +819,8 @@ function Shoes() {
               </div>
             </div>
           </div>
-
-          <div className="product-info" id="product-info">
-            <img
-              className="product-image"
-              id="product-image"
-              src={fashion1}
-              alt=""
-            />
-            <div className="product-text">
-              <div className="name-price">
-                <h3 className="product-name">Jacket Suit</h3>
-                <p className="product-price">$10.00</p>
-              </div>
-              <p className="product-details">
-                Product product-details dverbgern erhehtr erehge
-              </p>
-              <div className="product-card" id="card">
-                <div className="star">
-                  <i className="bx bx-star"></i>
-                  <i className="bx bx-star"></i>
-                  <i className="bx bx-star"></i>
-                  <i className="bx bx-star"></i>
-                  <i className="bx bxs-star-half"></i>
-                </div>
-                <i className="bx bx-shopping-bag add-to-cart"></i>
-              </div>
-            </div>
-          </div>
-          <div className="product-info" id="product-info">
-            <img
-              className="product-image"
-              id="product-image"
-              src={fashion2}
-              alt=""
-            />
-            <div className="product-text">
-              <div className="name-price">
-                <h3 className="product-name">Weather Jiut</h3>
-                <p className="product-price">$20.0</p>
-              </div>
-              <p className="product-details">
-                Product product-details dverbgern erhehtr erehge
-              </p>
-              <div className="product-card" id="card">
-                <div className="star">
-                  <i className="bx bx-star"></i>
-                  <i className="bx bx-star"></i>
-                  <i className="bx bx-star"></i>
-                  <i className="bx bx-star"></i>
-                  <i className="bx bxs-star-half"></i>
-                </div>
-                <i className="bx bx-shopping-bag add-to-cart"> </i>
-              </div>
-            </div>
-          </div>
-          <div className="product-info" id="product-info">
-            <img
-              className="product-image"
-              id="product-image"
-              src={fashion3}
-              alt=""
-            />
-            <div className="product-text">
-              <div className="name-price">
-                <h3 className="product-name">Luvist tuon</h3>
-                <p className="product-price">$50.0</p>
-              </div>
-              <p className="product-details">
-                Product product-details dverbgern erhehtr erehge
-              </p>
-              <div className="product-card" id="card">
-                <div className="star">
-                  <i className="bx bx-star"></i>
-                  <i className="bx bx-star"></i>
-                  <i className="bx bx-star"></i>
-                  <i className="bx bx-star"></i>
-                  <i className="bx bxs-star-half"></i>
-                </div>
-                <i className="bx bx-shopping-bag add-to-cart"></i>
-              </div>
-            </div>
-          </div>
-          <div className="product-info" id="product-info">
-            <img
-              className="product-image"
-              id="product-image"
-              src={fashion4}
-              alt=""
-            />
-            <div className="product-text">
-              <div className="name-price">
-                <h3 className="product-name">Sweather Jack</h3>
-                <p className="product-price">60.0$</p>
-              </div>
-              <p className="product-details">
-                Product product-details dverbgern erhehtr erehge
-              </p>
-              <div className="product-card" id="card">
-                <div className="star">
-                  <i className="bx bx-star"></i>
-                  <i className="bx bx-star"></i>
-                  <i className="bx bx-star"></i>
-                  <i className="bx bx-star"></i>
-                  <i className="bx bxs-star-half"></i>
-                </div>
-                <i className="bx bx-shopping-bag add-to-cart"></i>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
-      <section class="Product" id="product">
-        <div class="product-container" id="product-container">
-          <div class="product-info" id="product-info">
-            <img class="product-image" id="product-image" src={watch5} alt="" />
-            <div class="product-text">
-              <div class="name-price">
-                <h3 class="product-name">Oris Aqius Date</h3>
-                <p class="product-price">150.0$</p>
-              </div>
-              <p class="product-details">
-                Product product-details dverbgern erhehtr erehge
-              </p>
-              <div class="product-card" id="card">
-                <div class="star">
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bxs-star-half"></i>
-                </div>
-                <i class="bx bx-shopping-bag add-to-cart"></i>
-              </div>
-            </div>
-          </div>
-          <div class="product-info" id="product-info">
-            <img class="product-image" id="product-image" src={watch6} alt="" />
-            <div class="product-text">
-              <div class="name-price">
-                <h3 class="product-name">Suunto 5 Peak Mist Blue</h3>
-                <p class="product-price">80.0$</p>
-              </div>
-              <p class="product-details">
-                Product product-details dverbgern erhehtr erehge
-              </p>
-              <div class="product-card" id="card">
-                <div class="star">
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bxs-star-half"></i>
-                </div>
-                <i class="bx bx-shopping-bag add-to-cart"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-info" id="product-info">
-            <img class="product-image" id="product-image" src={watch7} alt="" />
-            <div class="product-text">
-              <div class="name-price">
-                <h3 class="product-name">Radley ladies Strap</h3>
-                <p class="product-price">60.0$</p>
-              </div>
-              <p class="product-details">
-                Product product-details dverbgern erhehtr erehge
-              </p>
-              <div class="product-card" id="card">
-                <div class="star">
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bxs-star-half"></i>
-                </div>
-                <i class="bx bx-shopping-bag add-to-cart"></i>
-              </div>
-            </div>
-          </div>
-          <div class="product-info" id="product-info">
-            <img class="product-image" id="product-image" src={watch8} alt="" />
-            <div class="product-text">
-              <div class="name-price">
-                <h3 class="product-name">YA157304</h3>
-                <p class="product-price">30.0$</p>
-              </div>
-              <p class="product-details">
-                Product product-details dverbgern erhehtr erehge
-              </p>
-              <div class="product-card" id="card">
-                <div class="star">
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bxs-star-half"></i>
-                </div>
-                <i class="bx bx-shopping-bag add-to-cart"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="Product" id="product">
-        <div class="product-container" id="product-container">
-          <div class="product-info" id="product-info">
-            <img class="product-image" id="product-image" src={bag8} alt="" />
-            <div class="product-text">
-              <div class="name-price">
-                <h3 class="product-name">Jecket Treamvelet</h3>
-                <p class="product-price">150.0$</p>
-              </div>
-              <p class="product-details">
-                Product product-details dverbgern erhehtr erehge
-              </p>
-              <div class="product-card" id="card">
-                <div class="star">
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bxs-star-half"></i>
-                </div>
-                <i class="bx bx-shopping-bag add-to-cart"></i>
-              </div>
-            </div>
-          </div>
-          <div class="product-info" id="product-info">
-            <img class="product-image" id="product-image" src={bag7} alt="" />
-            <div class="product-text">
-              <div class="name-price">
-                <h3 class="product-name">Mini Luvis</h3>
-                <p class="product-price">80.0$</p>
-              </div>
-              <p class="product-details">
-                Product product-details dverbgern erhehtr erehge
-              </p>
-              <div class="product-card" id="card">
-                <div class="star">
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bxs-star-half"></i>
-                </div>
-                <i class="bx bx-shopping-bag add-to-cart"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-info" id="product-info">
-            <img class="product-image" id="product-image" src={bag5} alt="" />
-            <div class="product-text">
-              <div class="name-price">
-                <h3 class="product-name">Li Maton</h3>
-                <p class="product-price">60.0$</p>
-              </div>
-              <p class="product-details">
-                Product product-details dverbgern erhehtr erehge
-              </p>
-              <div class="product-card" id="card">
-                <div class="star">
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bxs-star-half"></i>
-                </div>
-                <i class="bx bx-shopping-bag add-to-cart"></i>
-              </div>
-            </div>
-          </div>
-          <div class="product-info" id="product-info">
-            <img class="product-image" id="product-image" src={bag6} alt="" />
-            <div class="product-text">
-              <div class="name-price">
-                <h3 class="product-name">Luvis Jecket</h3>
-                <p class="product-price">30.0$</p>
-              </div>
-              <p class="product-details">
-                Product product-details dverbgern erhehtr erehge
-              </p>
-              <div class="product-card" id="card">
-                <div class="star">
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bx-star"></i>
-                  <i class="bx bxs-star-half"></i>
-                </div>
-                <i class="bx bx-shopping-bag add-to-cart"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="Related">
-        <h2>Related Collection</h2>
-        <div class="related-container">
-          <div class="wrape-content">
-            <div class="image">
-              <img src={related11} alt="" />
-            </div>
-            <div class="related-text">
-              <h3>Recycle</h3>
-              <div class="photos-related">
-                <p>693 photos</p>
-                <p>Created by Mel Hammer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="related-container">
-          <div class="wrape-content">
-            <div class="image">
-              <img src={related2} alt="" />
-            </div>
-            <div class="related-text">
-              <h3>Texture/Plastic</h3>
-              <div class="photos-related">
-                <p>1.1k photos</p>
-                <p>Created by Mixer X</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="related-container">
-          <div class="wrape-content">
-            <div class="image">
-              <img src={related5} alt="" />
-            </div>
-            <div class="related-text">
-              <h3>Going Green, Save the Earth, Climate Change</h3>
-              <div class="photos-related">
-                <p>2.3k photos</p>
-                <p>Created by Gen Alert</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <div class="footer-container">
-          <div class="footer-menu">
-            <div class="footer-menu-item">
-              <h2>Menu</h2>
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Service</a>
-              <a href="#">Product</a>
-              <a href="#">Contact</a>
-            </div>
-            <div class="footer-menu-item">
-              <h2>Contact Info</h2>
-              <a href="#">+855 977 304 279</a>
-              <a href="#">heatkoemnak@gamil.com</a>
-              <a href="#">Pnom penh,Cambodia-400104</a>
-            </div>
-            <div class="footer-menu-item">
-              <h2>Follow Us</h2>
-              <a href="#">Facebook</a>
-              <a href="#">Instagram</a>
-              <a href="#">Twitter</a>
-              <a href="#">Youtube</a>
-              <a href="#">Linkedin</a>
-            </div>
-            <div class="footer-menu-item">
-              <h2>Legal</h2>
-              <a href="#">Terms of use</a>
-              <a href="#">Privacy policy</a>
-              <a href="#">Cookies</a>
-            </div>
-          </div>
-          <div class="footer-social-media">
-            <a href="#">
-              <i class="bx bxl-facebook"></i>
-            </a>
-            <a href="#">
-              <i class="bx bxl-instagram"></i>
-            </a>
-            <a href="#">
-              <i class="bx bxl-twitter"></i>
-            </a>
-            <a href="#">
-              <i class="bx bxl-youtube"></i>
-            </a>
-          </div>
-        </div>
-      </footer>
     </>
   );
 }
