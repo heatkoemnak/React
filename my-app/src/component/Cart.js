@@ -13,16 +13,16 @@ function Cart() {
         </div>
         <div className="cart-item-details header-title">
           <div className="cart-item-brand ">
-            <p>Brand</p>
-          </div>
-          <div className="cart-item-name">
             <p>Name</p>
           </div>
-          <div className="cart-item-price">
+          <div className="cart-item-name">
             <p>Price</p>
           </div>
-          <div className="cart-item-quantity">
+          <div className="cart-item-price">
             <p>Quantity</p>
+          </div>
+          <div className="cart-item-quantity">
+            <p>Total</p>
           </div>
         </div>
       </div>
