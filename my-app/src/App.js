@@ -4,7 +4,6 @@ import ServiceScreen from "../src/screen/Service/ServiceScreen";
 import ShopScreen from "../src/screen/Shop/ShoScreen";
 import ContactScreen from "../src/screen/Contact/ContactScreen";
 import TeamScreen from "../src/screen/Team/TeamScreen";
-// import { useState } from "react";
 
 //commponents
 import MenuProduct from "./MenuProduct";
@@ -24,6 +23,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 //css
 import "./App.css";
 import "./screen/Home/HomeScreen.css";
+import "./component/cart.css";
 
 function App() {
   return (
@@ -32,6 +32,7 @@ function App() {
         <h3 className="header">RECYCLING WEBSITE</h3>
         <Navbar />
         <MenuProduct />
+
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/Service" element={<ServiceScreen />} />
