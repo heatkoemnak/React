@@ -12,7 +12,7 @@ function Login() {
     if (email !== "" && password !== "") {
       if (email === "camcode@gmail.com" && password === "camCode81") {
         navvigate("/");
-      }else{
+      } else {
         alert("Invalid email or password");
       }
     }
