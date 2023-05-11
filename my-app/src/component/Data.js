@@ -67,32 +67,34 @@ const data = [
     price: 30.0,
     description: "Product product-details dverbgern erhehtr erehge",
   },
+
+  //Watches product
   {
     id: 1,
-    name: "Fashion",
-    image: shoes3,
+    name: "Oris Aqius Date",
+    image: watch5,
+    price: 150.0,
+    description: " Product product-details dverbgern erhehtr erehge",
+  },
+  {
+    id: 1,
+    name: "Suunto 5 Peak Mist Blue",
+    image: watch6,
+    price: 80,
+    description: " Product product-details dverbgern erhehtr erehge",
+  },
+  {
+    id: 1,
+    name: "Radley ladies Strap",
+    image: watch7,
+    price: 60,
+    description: " Product product-details dverbgern erhehtr erehge",
+  },
+  {
+    id: 1,
+    name: "YA157304",
+    image: watch9,
     price: 30,
-    description: " Product product-details dverbgern erhehtr erehge",
-  },
-  {
-    id: 1,
-    name: "Fashion2",
-    image: shoes3,
-    price: 150,
-    description: " Product product-details dverbgern erhehtr erehge",
-  },
-  {
-    id: 1,
-    name: "Fashion",
-    image: shoes3,
-    price: 120,
-    description: " Product product-details dverbgern erhehtr erehge",
-  },
-  {
-    id: 1,
-    name: "Fashion2",
-    image: shoes3,
-    price: 150,
     description: " Product product-details dverbgern erhehtr erehge",
   },
 ];
