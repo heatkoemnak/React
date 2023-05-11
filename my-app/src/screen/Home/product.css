@@ -1,0 +1,113 @@
+.Product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(1fr,auto));
+    margin: auto;
+    width: 80%;
+    background-color:#f4efef;
+  }
+  .Product img{
+    cursor: pointer;
+    width: 282px;
+    height: 300px;
+    margin: 0 auto;
+    object-fit: fill;
+  
+  }
+  .product-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 29px;
+    margin-top: 10px;
+  }.product-info{
+    cursor: pointer;
+    width: 282px;
+    background-color: rgb(255, 255, 255);
+   
+  }
+  .product-info:hover{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    transition: all .42 ease;
+   
+   
+  
+    
+    
+  }
+  
+  .product-text {
+    padding: .5rem;
+  
+    
+    
+  }
+  .products-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 1rem;
+    color: rgb(53, 54, 52);
+   
+    
+  }
+  .products-type a{
+    color:gray;
+    font-size: 1.2rem;
+  
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 2px solid rgb(71, 107, 43);
+    transition: all .42 ease;
+    margin-left: 20px;
+  }.products-type a:hover{
+    color: rgb(255, 208, 0);
+    border-bottom: 2px solid rgb(255, 208, 0);
+    transition: all .42 ease;
+  }
+  .products-type a.active{
+    color: rgb(255, 208, 0);
+    border-bottom: 2px solid rgb(255, 208, 0);
+    transition: all .42 ease;
+  }
+  .name-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+  
+  
+  
+  }.name-price .product-price{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(71, 107, 43);
+  }.product-text .product-details{
+    font-size: 1rem;
+    color: rgb(53, 54, 52);
+  
+    
+  }
+  .product-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(71, 107, 43);
+  }
+  
+  .product-card{
+    display: flex;
+    justify-content: space-between;
+    
+  }.product-card .bx-star,.bxs-star-half{
+    color: rgb(255, 213, 0);
+   
+    padding: 5 0;
+  
+  }.bx-shopping-bag{
+    background-color: rgb(71, 107, 43);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 3px;
+  
+  }
+  

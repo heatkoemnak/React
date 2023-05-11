@@ -4,12 +4,16 @@ import ServiceScreen from "../src/screen/Service/ServiceScreen";
 import ShopScreen from "../src/screen/Shop/ShoScreen";
 import ContactScreen from "../src/screen/Contact/ContactScreen";
 import TeamScreen from "../src/screen/Team/TeamScreen";
+import React from "react";
+
+//data
 
 //commponents
 import MenuProduct from "./MenuProduct";
 import Navbar from "./component/navbar";
 import Login from "./component/login";
 import Signup from "./component/signup";
+import Product from "./screen/Home/Product";
 
 //menu cagegory
 import FashionScreen from "../src/screen/product/Fashion/FashionScreen";
@@ -32,6 +36,7 @@ function App() {
         <h3 className="header">RECYCLING WEBSITE</h3>
         <Navbar />
         <MenuProduct />
+        <Product />
 
         <Routes>
           <Route path="/" element={<HomeScreen />} />
@@ -54,5 +59,4 @@ function App() {
     </BrowserRouter>
   );
 }
-
 export default App;
