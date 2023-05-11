@@ -1,5 +1,4 @@
 import shoes3 from "../screen/asset/shoes5.jpg";
-
 import shoes4 from "../screen/asset/shoes4.jpg";
 import shoes5 from "../screen/asset/shoes5.jpg";
 import shoes6 from "../screen/asset/shoes6.jpg";
@@ -72,7 +71,7 @@ const data = [
   {
     id: 1,
     name: "Oris Aqius Date",
-    image: watch5,
+    image: watch10,
     price: 150.0,
     description: " Product product-details dverbgern erhehtr erehge",
   },
@@ -93,7 +92,7 @@ const data = [
   {
     id: 1,
     name: "YA157304",
-    image: watch9,
+    image: watch3,
     price: 30,
     description: " Product product-details dverbgern erhehtr erehge",
   },

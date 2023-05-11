@@ -135,58 +135,7 @@ const HomeScreen = () => {
     </>
   );
 };
-function Footer() {
-  return (
-    <footer>
-      <div class="footer-container">
-        <div class="footer-menu">
-          <div class="footer-menu-item">
-            <h2>Menu</h2>
-            <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Service</Link>
-            <Link href="#">Product</Link>
-            <Link href="#">Contact</Link>
-          </div>
-          <div class="footer-menu-item">
-            <h2>Contact Info</h2>
-            <Link href="#">+855 977 304 279</Link>
-            <Link href="#">heatkoemnak@gamil.com</Link>
-            <Link href="#">Pnom penh,Cambodia-400104</Link>
-          </div>
-          <div class="footer-menu-item">
-            <h2>Follow Us</h2>
-            <Link href="#">Facebook</Link>
-            <Link href="#">Instagram</Link>
-            <Link href="#">Twitter</Link>
-            <Link href="#">Youtube</Link>
-            <Link href="#">Linkedin</Link>
-          </div>
-          <div class="footer-menu-item">
-            <h2>Legal</h2>
-            <Link href="#">Terms of use</Link>
-            <Link href="#">Privacy policy</Link>
-            <Link href="#">Cookies</Link>
-          </div>
-        </div>
-        <div class="footer-social-media">
-          <Link href="#">
-            <i class="bx bxl-facebook"></i>
-          </Link>
-          <Link href="#">
-            <i class="bx bxl-instagram"></i>
-          </Link>
-          <Link href="#">
-            <i class="bx bxl-twitter"></i>
-          </Link>
-          <Link href="#">
-            <i class="bx bxl-youtube"></i>
-          </Link>
-        </div>
-      </div>
-    </footer>
-  );
-}
+
 
 function Related() {
   return (
@@ -278,101 +227,56 @@ function Materails() {
     </div>
   );
 }
-function Watches() {
+function Footer() {
   return (
-    <section class="Product" id="product">
-      <div class="product-container" id="product-container">
-        <div class="product-info" id="product-info">
-          <img class="product-image" id="product-image" src={watch5} alt="" />
-          <div class="product-text">
-            <div class="name-price">
-              <h3 class="product-name">Oris Aqius Date</h3>
-              <p class="product-price">150.0$</p>
-            </div>
-            <p class="product-details">
-              Product product-details dverbgern erhehtr erehge
-            </p>
-            <div class="product-card" id="card">
-              <div class="star">
-                <i class="bx bx-star"></i>
-                <i class="bx bx-star"></i>
-                <i class="bx bx-star"></i>
-                <i class="bx bx-star"></i>
-                <i class="bx bxs-star-half"></i>
-              </div>
-              <i class="bx bx-shopping-bag add-to-cart"></i>
-            </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-menu">
+          <div class="footer-menu-item">
+            <h2>Menu</h2>
+            <Link href="#">Home</Link>
+            <Link href="#">About</Link>
+            <Link href="#">Service</Link>
+            <Link href="#">Product</Link>
+            <Link href="#">Contact</Link>
+          </div>
+          <div class="footer-menu-item">
+            <h2>Contact Info</h2>
+            <Link href="#">+855 977 304 279</Link>
+            <Link href="#">heatkoemnak@gamil.com</Link>
+            <Link href="#">Pnom penh,Cambodia-400104</Link>
+          </div>
+          <div class="footer-menu-item">
+            <h2>Follow Us</h2>
+            <Link href="#">Facebook</Link>
+            <Link href="#">Instagram</Link>
+            <Link href="#">Twitter</Link>
+            <Link href="#">Youtube</Link>
+            <Link href="#">Linkedin</Link>
+          </div>
+          <div class="footer-menu-item">
+            <h2>Legal</h2>
+            <Link href="#">Terms of use</Link>
+            <Link href="#">Privacy policy</Link>
+            <Link href="#">Cookies</Link>
           </div>
         </div>
-        <div class="product-info" id="product-info">
-          <img class="product-image" id="product-image" src={watch6} alt="" />
-          <div class="product-text">
-            <div class="name-price">
-              <h3 class="product-name">Suunto 5 Peak Mist Blue</h3>
-              <p class="product-price">80.0$</p>
-            </div>
-            <p class="product-details">
-              Product product-details dverbgern erhehtr erehge
-            </p>
-            <div class="product-card" id="card">
-              <div class="star">
-                <i class="bx bx-star"></i>
-                <i class="bx bx-star"></i>
-                <i class="bx bx-star"></i>
-                <i class="bx bx-star"></i>
-                <i class="bx bxs-star-half"></i>
-              </div>
-              <i class="bx bx-shopping-bag add-to-cart"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-info" id="product-info">
-          <img class="product-image" id="product-image" src={watch7} alt="" />
-          <div class="product-text">
-            <div class="name-price">
-              <h3 class="product-name">Radley ladies Strap</h3>
-              <p class="product-price">60.0$</p>
-            </div>
-            <p class="product-details">
-              Product product-details dverbgern erhehtr erehge
-            </p>
-            <div class="product-card" id="card">
-              <div class="star">
-                <i class="bx bx-star"></i>
-                <i class="bx bx-star"></i>
-                <i class="bx bx-star"></i>
-                <i class="bx bx-star"></i>
-                <i class="bx bxs-star-half"></i>
-              </div>
-              <i class="bx bx-shopping-bag add-to-cart"></i>
-            </div>
-          </div>
-        </div>
-        <div class="product-info" id="product-info">
-          <img class="product-image" id="product-image" src={watch8} alt="" />
-          <div class="product-text">
-            <div class="name-price">
-              <h3 class="product-name">YA157304</h3>
-              <p class="product-price">30.0$</p>
-            </div>
-            <p class="product-details">
-              Product product-details dverbgern erhehtr erehge
-            </p>
-            <div class="product-card" id="card">
-              <div class="star">
-                <i class="bx bx-star"></i>
-                <i class="bx bx-star"></i>
-                <i class="bx bx-star"></i>
-                <i class="bx bx-star"></i>
-                <i class="bx bxs-star-half"></i>
-              </div>
-              <i class="bx bx-shopping-bag add-to-cart"></i>
-            </div>
-          </div>
+        <div class="footer-social-media">
+          <Link href="#">
+            <i class="bx bxl-facebook"></i>
+          </Link>
+          <Link href="#">
+            <i class="bx bxl-instagram"></i>
+          </Link>
+          <Link href="#">
+            <i class="bx bxl-twitter"></i>
+          </Link>
+          <Link href="#">
+            <i class="bx bxl-youtube"></i>
+          </Link>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
 
