@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { useState } from "react";
+
+//slider
 import image1 from "../asset/s005.jpg";
 import image2 from "../asset/s002.png";
 import image3 from "../asset/s003.png";
@@ -16,44 +18,7 @@ import material6 from "../asset/5.jpg";
 import material7 from "../asset/6.jpg";
 import material8 from "../asset/1.webp";
 
-import shoes3 from "../asset/shoes3.jpg";
-import shoes4 from "../asset/shoes4.jpg";
-import shoes5 from "../asset/shoes5.jpg";
-import shoes6 from "../asset/shoes6.jpg";
-import shoes7 from "../asset/shoes7.jpg";
-import shoes8 from "../asset/shoes8.jpg";
-import shoes9 from "../asset/shoes9.jpg";
 
-import fashion1 from "../asset/fashion1.jpg";
-import fashion2 from "../asset/fashion2.webp";
-import fashion3 from "../asset/fashion3.jpg";
-import fashion4 from "../asset/fashion4.jpg";
-import fashion5 from "../asset/fashion5.jpg";
-import fashion6 from "../asset/fashion6.jpg";
-import fashion7 from "../asset/fashion7.jpg";
-import fashion8 from "../asset/fashion8.jpg";
-import fashion9 from "../asset/fashion9.jpg";
-
-import bag1 from "../asset/bag1.jpg";
-import bag2 from "../asset/bag2.jpg";
-import bag3 from "../asset/bag3.jpg";
-import bag4 from "../asset/bag4.webp";
-import bag5 from "../asset/bag5.webp";
-import bag6 from "../asset/bag6.jpg";
-import bag7 from "../asset/bag7.jpg";
-import bag8 from "../asset/bag8.avif";
-import bag9 from "../asset/bag9.png";
-
-import watch1 from "../asset/watch1.webp";
-import watch2 from "../asset/watch2.jpg";
-import watch3 from "../asset/watch3.webp";
-import watch4 from "../asset/watch4.webp";
-import watch5 from "../asset/watch5.jpg";
-import watch6 from "../asset/watch6.jpg";
-import watch7 from "../asset/watch7.jpg";
-import watch8 from "../asset/watch8.webp";
-import watch9 from "../asset/watch9.webp";
-import watch10 from "../asset/watch10.webp";
 
 import related1 from "../asset/related_to_recycle1.jpg";
 import related2 from "../asset/related_to_recycle2.jpg";
