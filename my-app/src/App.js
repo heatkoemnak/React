@@ -13,7 +13,6 @@ import MenuProduct from "./MenuProduct";
 import Navbar from "./component/navbar";
 import Login from "./component/login";
 import Signup from "./component/signup";
-import Product from "./screen/Home/Product";
 
 //menu cagegory
 import FashionScreen from "../src/screen/product/Fashion/FashionScreen";
@@ -36,7 +35,6 @@ function App() {
         <h3 className="header">RECYCLING WEBSITE</h3>
         <Navbar />
         <MenuProduct />
-        <Product />
 
         <Routes>
           <Route path="/" element={<HomeScreen />} />
