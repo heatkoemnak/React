@@ -1,32 +1,32 @@
 //Navbar
+import React from "react";
+import ContactScreen from "../src/screen/Contact/ContactScreen";
 import HomeScreen from "../src/screen/Home/HomeScreen";
 import ServiceScreen from "../src/screen/Service/ServiceScreen";
 import ShopScreen from "../src/screen/Shop/ShoScreen";
-import ContactScreen from "../src/screen/Contact/ContactScreen";
 import TeamScreen from "../src/screen/Team/TeamScreen";
-import React from "react";
 
 //data
 
 //commponents
 import MenuProduct from "./MenuProduct";
-import Navbar from "./component/navbar";
 import Login from "./component/login";
+import Navbar from "./component/navbar";
 import Signup from "./component/signup";
 
 //menu cagegory
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AccessoriesScreen from "../src/screen/product/Accessories/AccessoriesScreen";
+import BagScreen from "../src/screen/product/Bag/BagScreen";
 import FashionScreen from "../src/screen/product/Fashion/FashionScreen";
 import ShoesScreen from "../src/screen/product/Shoes/ShoesScreen";
-import BagScreen from "../src/screen/product/Bag/BagScreen";
-import WatchScreen from "../src/screen/product/Watch/WatchScreen";
 import ToyScreen from "../src/screen/product/Toy/ToyScreen";
-import AccessoriesScreen from "../src/screen/product/Accessories/AccessoriesScreen";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import WatchScreen from "../src/screen/product/Watch/WatchScreen";
 
 //css
 import "./App.css";
-import "./screen/Home/HomeScreen.css";
 import "./component/cart.css";
+import "./screen/Home/HomeScreen.css";
 
 function App() {
   return (

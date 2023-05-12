@@ -1,53 +1,46 @@
 import React from "react";
 import "./cart.css";
-import Image from "../screen/asset/fashion4.jpg";
+import { useState } from "react";
+import Product from "../screen/Home/Product";
+import data from "../component/Data";
 
-function Cart() {
-   
+// import Image from "../screen/asset/fashion4.jpg";
+
+const Cart = ({ cart }) => {
   return (
-    <div className="cart-item">
-      <h1>Cart</h1>
-      <div className="header-table">
-        <div className="pro-Image">
-          <p>Pro-Image</p>
-        </div>
-        <div className="cart-item-details header-title">
-          <div className="cart-item-brand ">
-            <p>Name</p>
-          </div>
-          <div className="cart-item-name">
-            <p>Price</p>
-          </div>
-          <div className="cart-item-price">
-            <p>Quantity</p>
-          </div>
-          <div className="cart-item-quantity">
-            <p>Total</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="cart-content">
-        <div className="cart-item-image">
-          <img src={Image} alt="product" />
-        </div>
-        <div className="cart-item-details">
-          <div className="cart-item-brand">
-            <p>Brand</p>
-          </div>
-          <div className="cart-item-name">
-            <p>Name</p>
-          </div>
-          <div className="cart-item-price">
-            <p>Price</p>
-          </div>
-          <div className="cart-item-quantity">
-            <p>Quantity</p>
-          </div>
-        </div>
-      </div>
+    <div>
+      <h2>Cart</h2>
+      <ul>
+        {cart.map((item) => (
+          <>
+            <li key={item.id}>
+              {item.image}
+              {item.name}
+              {item.price}
+            </li>
+          </>
+        ))}
+      </ul>
     </div>
   );
-}
+};
 
-export default Cart;
+const App = () => {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (item) => {
+    setCart([...cart, item]);
+  };
+
+  return (
+    <div>
+      <h1>Shopping App</h1>
+      {data.map((item) => (
+        <Product key={item.id} item={data} addToCart={addToCart} />
+      ))}
+      <Cart cart={cart} />
+    </div>
+  );
+};
+
+export default App;

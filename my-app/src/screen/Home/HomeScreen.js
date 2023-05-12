@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
+
+
 import { useState } from "react";
 
 //slider
@@ -17,8 +20,6 @@ import material5 from "../asset/4.jfif";
 import material6 from "../asset/5.jpg";
 import material7 from "../asset/6.jpg";
 import material8 from "../asset/1.webp";
-
-
 
 import related1 from "../asset/related_to_recycle1.jpg";
 import related2 from "../asset/related_to_recycle2.jpg";
@@ -93,14 +94,12 @@ const HomeScreen = () => {
           <p>See more</p>
         </div>
       </div>
-      <Product />
-
+      <Product/>
       <Related />
       <Footer />
     </>
   );
 };
-
 
 function Related() {
   return (
