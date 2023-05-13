@@ -26,19 +26,9 @@ const Cart = ({ cart }) => {
 };
 
 const App = () => {
-  const [cart, setCart] = useState([]);
-
-  const addToCart = (item) => {
-    setCart([...cart, item]);
-  };
-
   return (
     <div>
       <h1>Shopping App</h1>
-      {data.map((item) => (
-        <Product key={item.id} item={data} addToCart={addToCart} />
-      ))}
-      <Cart cart={cart} />
     </div>
   );
 };
