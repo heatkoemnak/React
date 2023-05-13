@@ -6,7 +6,10 @@ import ServiceScreen from "../src/screen/Service/ServiceScreen";
 import ShopScreen from "../src/screen/Shop/ShoScreen";
 import TeamScreen from "../src/screen/Team/TeamScreen";
 
-//data
+//Cart
+// import Cart from "./component/Cart";
+// import Product from "./screen/Home/Product";
+// import data from "./component/Data";
 
 //commponents
 import MenuProduct from "./MenuProduct";
@@ -29,6 +32,8 @@ import "./component/cart.css";
 import "./screen/Home/HomeScreen.css";
 
 function App() {
+
+  
   return (
     <BrowserRouter>
       <div className="App">
