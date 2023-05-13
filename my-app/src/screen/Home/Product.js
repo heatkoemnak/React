@@ -1,27 +1,28 @@
 //import data
-import data from "../../component/Data";
+// import { useState } from "react";
+
 import "./product.css";
 
-
-//import cart
-
-const Product = ({ addToCart}) => {
-  
+const Product = ({product, addToCart }) => {
   return (
     <div>
       <section className="Product" id="product">
         <div className="product-container" id="product-container">
-          {data.map((item) => (
-            <div className="product-info" id="product-info" key={item.id} item={data} addToCart={addToCart}>
+          {product.map((productItem,productIdex) => (
+            <div
+              className="product-info"
+              id="product-info"
+              key={productItem.id}
+            >
               <div className="product-image">
-                <img src={item.image} alt={item.name} />
+                <img src={productItem.image} alt={productItem.name} />
               </div>
               <div className="product-text">
                 <div className="name-price">
-                  <div className="product-item-name">{item.name}</div>
-                  <div className="product-item-price">${item.price}</div>
+                  <div className="product-item-name">{productItem.name}</div>
+                  <div className="product-item-price">${productItem.price}</div>
                 </div>
-                <div className="product-details">{item.description}</div>
+                <div className="product-details">{productItem.description}</div>
                 <div className="product-card" id="card">
                   <div className="star">
                     <i className="bx bx-star"></i>
@@ -31,8 +32,7 @@ const Product = ({ addToCart}) => {
                     <i className="bx bxs-star-half"></i>
                   </div>
                   <i
-                    onClick={() => addToCart(item)}
-                    
+                    onClick={() => addToCart(productItem)}
                     className="bx bx-shopping-bag add-to-cart"
                   ></i>
                 </div>
