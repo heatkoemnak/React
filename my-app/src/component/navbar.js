@@ -8,6 +8,8 @@ function Navbar() {
   const toggleCart = () => {
     setCart(!cart);
   };
+
+  
   return (
     <>
       <nav className="nav-bar">
