@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Cart from "./Cart";
+import data from "../component/Data";
+
 
 function Navbar() {
-  const [cart, setCart] = useState(false);
-  const toggleCart = () => {
-    setCart(!cart);
-  };
-
-  
+  // const [cart, setCart] = useState(false);
+  // const toggleCart = () => {
+  //   setCart(!cart);
+  // };
   return (
     <>
       <nav className="nav-bar">
@@ -44,7 +44,7 @@ function Navbar() {
         <div className="nav-icon" id="nav-icon">
           <i className="bx bx-search btn-search" id="search"></i>
           <i
-            onClick={toggleCart}
+            // onClick={toggleCart}
             className="bx bxs-cart-download icon"
             id="shopping-cart"
           ></i>
@@ -60,7 +60,7 @@ function Navbar() {
           </Link>
         </div>
       </nav>
-      {cart && <Cart />}
+      
 
     </>
   );
