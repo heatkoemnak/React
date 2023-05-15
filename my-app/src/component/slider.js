@@ -5,7 +5,6 @@ import "./slider.css";
 import "../App.css";
 
 import image1 from "../screen/asset/banner4.jpg";
-// import image2 from "../screen/asset/banner7.webp";
 import image3 from "../screen/asset/banner5.jpg";
 import image4 from "../screen/asset/s001.png";
 import image5 from "../screen/asset/banner8.png";
@@ -16,7 +15,7 @@ import loca from "../screen/asset/loca.avif";
 
 function Slider() {
   const [selectImage, setSelectImage] = useState(1);
-  const [allImage, setAllImage] = useState([
+  const [allImage] = useState([
     image1,
     image3,
     image4,
@@ -35,7 +34,7 @@ function Slider() {
       }
     }, 3000);
     return () => clearInterval(interval);
-  }, [selectImage]);
+  });
 
   return (
     <div className="campagn">
@@ -52,8 +51,7 @@ function Slider() {
         <div className="location">
           <div className="wrap-location">
             <div className="locate-imag">
-              <img src={loca}></img>
-
+              <img src={loca} />
               <div className="location-text">
                 <i className="bx bx-chevron-left"></i>
                 <div className="wrap-text">
