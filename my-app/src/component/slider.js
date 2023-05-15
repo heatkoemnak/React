@@ -4,15 +4,26 @@ import { Link } from "react-router-dom";
 import "./slider.css";
 import "../App.css";
 
-import image1 from "../screen/asset/s005.jpg";
-import image2 from "../screen/asset/s002.png";
-import image3 from "../screen/asset/s003.png";
+import image1 from "../screen/asset/banner4.jpg";
+// import image2 from "../screen/asset/banner7.webp";
+import image3 from "../screen/asset/banner5.jpg";
 import image4 from "../screen/asset/s001.png";
+import image5 from "../screen/asset/banner8.png";
+import image9 from "../screen/asset/banner9.jpg";
+import image10 from "../screen/asset/banner10.jpg";
+
 import loca from "../screen/asset/loca.avif";
 
 function Slider() {
   const [selectImage, setSelectImage] = useState(1);
-  const [allImage, setAllImage] = useState([image1, image2, image3, image4]);
+  const [allImage, setAllImage] = useState([
+    image1,
+    image3,
+    image4,
+    image5,
+    image9,
+    image10,
+  ]);
 
   React.useEffect(() => {
     const interval = setInterval(() => {
