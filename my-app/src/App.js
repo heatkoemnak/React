@@ -6,15 +6,8 @@ import ServiceScreen from "../src/screen/Service/ServiceScreen";
 import ShopScreen from "../src/screen/Shop/ShoScreen";
 import TeamScreen from "../src/screen/Team/TeamScreen";
 
-//Cart
-// import Cart from "./component/Cart";
-// import Product from "./screen/Home/Product";
-// import data from "./component/Data";
-
 //commponents
-import MenuProduct from "./component/MenuProduct";
 import Login from "./component/login";
-import Navbar from "./component/navbar";
 import Signup from "./component/signup";
 
 //menu cagegory
