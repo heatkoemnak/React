@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./cart.css";
+import data from "./Data";
 
 // import Image from "../screen/asset/fashion4.jpg";
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, props }) => {
+  //set function closeCart
+  const [removecart, setSetRemoveCart] = useState();
+  const handleRemove = (id) => {
+    const newCart = cart.filter((cartItem) => cartItem.id !== id);
+    setSetRemoveCart(newCart);
+  };
+
+  const [quantityCart, setQuantityCart] = useState(1);
+  const handlePlus = () => {
+    setQuantityCart(quantityCart + 1);
+  };
+  const handleMinus = () => {
+    setQuantityCart(quantityCart - 1);
+  };
+  const [CART, setCART] = useState(1);
+
   return (
     <div className="Cart">
       <div className="shopping-cart">
@@ -49,13 +66,15 @@ const Cart = ({ cart }) => {
                 </td>
                 <td>
                   <div className="quantity">
-                    <button>-</button>
-                    <input type="text" name="" value="2"></input>
-                    <button>+</button>
+                    <button className="sub-btn" onClick={handleMinus}>
+                      -
+                    </button>
+                    <span>{quantityCart}</span>
+                    <button className="plus-btn">+</button>
                   </div>
                 </td>
                 <td className="sub-price">${cartItem.price}</td>
-                <td className="sub-price">${cartItem.price}</td>
+                <td className="sub-price">${cartItem.price * quantityCart}</td>
                 <td className="remove-item">
                   <i class="bx bx-trash-alt"></i>
                 </td>
@@ -65,11 +84,19 @@ const Cart = ({ cart }) => {
         </tbody>
         <div className="Total">
           <div>Total | </div>
-          <div>$350</div>
+          <div>
+            {cart.map((cartItem) => {
+              return <div>{cartItem.price * cartItem.quantity}</div>;
+            })}
+          </div>
         </div>
       </div>
       <div class="btn-group btns-cart">
-        <button type="button" class="btn btn-primary">
+        <button
+          type="button"
+          class="btn btn-primary"
+          onClick={() => props.handleCart(false)}
+        >
           <i class="fa fa-arrow-circle-left"></i> Continue Shopping
         </button>
         <button type="button" class="btn btn-primary">
@@ -79,6 +106,7 @@ const Cart = ({ cart }) => {
           Checkout <i class="fa fa-arrow-circle-right"></i>
         </button>
       </div>
+      {CART}
     </div>
   );
 };
