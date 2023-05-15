@@ -2,6 +2,8 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import google from "../screen/asset/google.webp";
 import { useState } from "react";
+import "./signin.css"
+
 
 function Login() {
   const navvigate = useNavigate();
