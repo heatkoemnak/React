@@ -19,6 +19,7 @@ body {
   --menu-item-color: #848484;
   --dark-green-color: #28400c;
   --middle-green-color: #305704;
+  --menu-green-color: #4cb50b;
 }
 
 li,
@@ -37,14 +38,13 @@ button {
 }
 .logo {
   font-weight: 700;
-  color: rgb(0, 0, 0);
   text-transform: uppercase;
   cursor: pointer;
   margin: 0 0 0 10px;
   padding: 0;
   font-weight: 700;
   font-size: 3rem;
-  color: var(--green-primary-color);
+  color: #ffffff;
   text-transform: uppercase;
   /* background: #28400c; */
 }
@@ -71,7 +71,7 @@ button {
   align-items: center;
   padding: 1rem 4rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  background-color: var(--navbar-backround-color);
+  background-color: #81f450;
   z-index: 1;
 }
 .nav-container {
@@ -104,10 +104,10 @@ button {
 }
 .nav-icon #shopping-cart {
   font-size: 1.5rem;
-  color: var(--white-secondary-color);
-  background-color: var(--green-primary-color);
+  color: #000000;
   border-radius: 3px;
   padding: 1px;
+  background-color: #ffffff;
 }
 .nav-icon input[type="text"] {
   color: var(--secondary-color);
@@ -133,10 +133,9 @@ button {
   padding: 12px;
 }
 .sign-account:hover {
-  border: 1px solid gray;
   border-radius: 5px;
   transition: 0.3s;
-  box-shadow: 0 0 5px var(--green-primary-color);
+  box-shadow: 0 0 15px var(--white-secondary-color);
 }
 .log-to-signin {
   display: flex;

@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../../../component/navbar"
+import MenuProduct from "../../../component/MenuProduct"
 
 import bag1 from "../../../screen/asset/bag1.jpg";
 import bag2 from "../../../screen/asset/bag2.jpg";
@@ -28,6 +30,8 @@ import related11 from "../../../screen/asset/related-to-recycle11.jpg";
 function BagScreen() {
   return (
     <>
+    <Navbar/>
+    <MenuProduct/>
       <div className="search-product">
         <input type="text" placeholder="Search Product" />
         <button className="search-btn">Search</button>

@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Navbar from "../../../component/navbar";
+import MenuProduct from "../../../component/MenuProduct";
+
 // import shoes3 from "../../../screen/asset/shoes3.jpg";
 // import shoes4 from "../../../screen/asset/shoes4.jpg";
 import shoes5 from "../../../screen/asset/shoes5.jpg";
@@ -24,6 +27,9 @@ import related11 from "../../../screen/asset/related-to-recycle11.jpg";
 function ShoesScreen() {
   return (
     <>
+      <Navbar />
+      <MenuProduct />
+
       <div className="search-product">
         <input type="text" placeholder="Search Product" />
         <button className="search-btn">Search</button>

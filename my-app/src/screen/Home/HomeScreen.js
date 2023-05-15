@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
-
-import Cart from "../../component/Cart";
-import Product from "./Product";
+import Product from "../../component/Product";
 import data from "../../component/Data";
 import SeeMore from "../../component/seeMore";
 import SearchProduct from "../../component/searchProduct";
@@ -10,34 +8,39 @@ import Slider from "../../component/slider";
 import Related from "../../component/Related";
 import Materails from "../../component/materials ";
 import Footer from "../../component/footer";
+import Cart from "../../component/Cart";
+import Navbar from "../../component/navbar";
+import MenuProduct from "../../component/MenuProduct";
 
-
-const HomeScreen = () => {
+const HomeScreen = (props) => {
   const [product, setProduct] = useState(data);
-
-  const [cart, setCart] = useState([]);
-
+  const [cart, setTheCart] = useState([]);
   const addToCart = (data) => {
-    setCart(...cart, data);
+    setTheCart([...cart, { ...data, quantity: 1 }]);
   };
-  console.log(cart);
-
-  //set auto slider
+  const [ShowCart, setShowCart] = useState(false);
+  const handleCart = () => {
+    setShowCart((ShowCart) => !ShowCart);
+  };
 
   return (
     <>
-      <Cart cart={cart}></Cart>
+      <Navbar count={cart.length} handleCart={handleCart}></Navbar>
+      <MenuProduct />
       <Slider />
       <Materails />
       <SearchProduct />
       <SeeMore />
-      <Product product={product} addToCart={addToCart}></Product>
+      {ShowCart ? (
+        <Cart cart={cart}></Cart>
+      ) : (
+        <Product product={product} addToCart={addToCart}></Product>
+      )}
+
       <Related />
       <Footer />
     </>
   );
 };
-
-
 
 export default HomeScreen;

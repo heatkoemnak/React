@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../../../component/navbar";
+import MenuProduct from "../../../component/MenuProduct";
 
 //inport watch from homeScreen
 import watch1 from "../../../screen/asset/watch1.webp";
@@ -27,6 +29,8 @@ import related11 from "../../../screen/asset/related-to-recycle11.jpg";
 function Watchcreen() {
   return (
     <>
+      <Navbar />
+      <MenuProduct />
       <div className="search-product">
         <input type="text" placeholder="Search Product" />
         <button className="search-btn">Search</button>

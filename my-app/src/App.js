@@ -12,7 +12,7 @@ import TeamScreen from "../src/screen/Team/TeamScreen";
 // import data from "./component/Data";
 
 //commponents
-import MenuProduct from "./MenuProduct";
+import MenuProduct from "./component/MenuProduct";
 import Login from "./component/login";
 import Navbar from "./component/navbar";
 import Signup from "./component/signup";
@@ -32,15 +32,10 @@ import "./component/cart.css";
 import "./screen/Home/HomeScreen.css";
 
 function App() {
-
-  
   return (
     <BrowserRouter>
       <div className="App">
         <h3 className="header">RECYCLING WEBSITE</h3>
-        <Navbar />
-        <MenuProduct />
-
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/Service" element={<ServiceScreen />} />
