@@ -1,15 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import Cart from "./Cart";
-import data from "../component/Data";
 
-
-function Navbar() {
-  // const [cart, setCart] = useState(false);
-  // const toggleCart = () => {
-  //   setCart(!cart);
-  // };
+function Navbar(props) {
   return (
     <>
       <nav className="nav-bar">
@@ -44,11 +36,12 @@ function Navbar() {
         <div className="nav-icon" id="nav-icon">
           <i className="bx bx-search btn-search" id="search"></i>
           <i
-            // onClick={toggleCart}
+            onClick={() => props.handleCart(true)}
             className="bx bxs-cart-download icon"
             id="shopping-cart"
-          ></i>
-
+          >
+            <sup>{props.count}</sup>
+          </i>
           <Link to="/Login" className="sign-account">
             <div className="log-to-signin">
               <p>Hello👋</p>
@@ -60,8 +53,6 @@ function Navbar() {
           </Link>
         </div>
       </nav>
-      
-
     </>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import "./seemore.css"
 
 function seeMore() {
   return (

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Related.css"
 import related1 from "../screen/asset/related_to_recycle1.jpg";
 import related2 from "../screen/asset/related_to_recycle2.jpg";
 import related3 from "../screen/asset/related_to_recycle3.jpg";

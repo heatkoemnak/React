@@ -1,4 +1,5 @@
 import React from "react";
+import "./serchProduct.css"
 
 function searchProduct() {
   return (

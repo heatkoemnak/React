@@ -1,10 +1,14 @@
-import React,{ useState }  from "react";
+/* eslint-disable jsx-a11y/alt-text */
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./slider.css";
+import "../App.css";
 
 import image1 from "../screen/asset/s005.jpg";
 import image2 from "../screen/asset/s002.png";
 import image3 from "../screen/asset/s003.png";
 import image4 from "../screen/asset/s001.png";
+import loca from "../screen/asset/loca.avif";
 
 function Slider() {
   const [selectImage, setSelectImage] = useState(1);
@@ -35,12 +39,22 @@ function Slider() {
           Nearby Enterprise
         </Link>
         <div className="location">
-          <i className="bx bx-location-plus"></i>
-          <i className="bx bx-chevron-up"></i>
-          <p>Location</p>
-          <p>សង្កាត់ទឹកថ្លា Sangkat Tuek Thla ភ្នំពេញ</p>
-          <p>10km 30s</p>
-          <i className="bx bx-chevron-down "></i>
+          <div className="wrap-location">
+            <div className="locate-imag">
+              <img src={loca}></img>
+
+              <div className="location-text">
+                <i className="bx bx-chevron-left"></i>
+                <div className="wrap-text">
+                  <i class="bx bxs-map"></i>
+                  <p>Location</p>
+                  <p>សង្កាត់ទឹកថ្លា Sangkat Tuek Thla ភ្នំពេញ</p>
+                  <p>10km 30s</p>
+                </div>
+                <i className="bx bx-chevron-right "></i>
+              </div>
+            </div>
+          </div>
         </div>
         <Link className="feature-list" to="/Contact">
           ALL PRODUCTS TYPE
