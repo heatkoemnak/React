@@ -33,15 +33,14 @@
   background-color: var(--green-primary-color);
   color: var(--white-secondary-color);
   width: 95%;
-  margin: 20px auto;
-  border-radius: 18px;
+  margin: 15px auto;
+  border-radius: 10px;
   border: 1px solid #60ff34;
-  
 }
 .wrap-location {
   display: flex;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
   width: 100%;
   position: relative;
 }
@@ -53,6 +52,13 @@
   align-items: center;
   background-color: #02663c;
   opacity: 0.7;
+}
+
+.location-text:hover {
+  background-color: #02663c;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: 0.7s;
 }
 .wrap-text p {
   font-size: 15px;
