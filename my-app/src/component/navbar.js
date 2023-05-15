@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import "./navbar.css";
 
 function Navbar(props) {
   return (
@@ -34,13 +35,13 @@ function Navbar(props) {
           </li>
         </div>
         <div className="nav-icon" id="nav-icon">
-          <i className="bx bx-search btn-search" id="search"></i>
+          <i className="bx bx-search btn-search"></i>
           <i
             onClick={() => props.handleCart(true)}
-            className="bx bxs-cart-download icon"
+            className="bx bxs-cart-download icon "
             id="shopping-cart"
           >
-            <sup>{props.count}</sup>
+            <sup className="count-cart">{props.count}</sup>
           </i>
           <Link to="/Login" className="sign-account">
             <div className="log-to-signin">
