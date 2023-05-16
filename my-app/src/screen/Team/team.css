@@ -1,0 +1,17 @@
+.header-team {
+  text-align: center;
+  padding: 20px;
+}
+.team-container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.team-container .team-image {
+    margin: 20px;
+    cursor: pointer;
+  
+}
