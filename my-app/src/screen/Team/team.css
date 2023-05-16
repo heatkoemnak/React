@@ -9,9 +9,17 @@
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .team-container .team-image {
     margin: 20px;
     cursor: pointer;
+    
   
 }
+.team-container .team-image img:hover{
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(64, 70, 70, 0.2);
+
+}
+

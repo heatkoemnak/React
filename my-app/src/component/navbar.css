@@ -43,6 +43,8 @@ button {
 .nav-bar {
   position: sticky;
   top: 0;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -70,7 +72,7 @@ button {
   -o-transition: all 0.4s ease-in-out;
 }
 .nav-container .item:hover {
-  color: var(--green-primary-color);
+  color: var(--white-secondary-color);
   transition: none;
 }
 .nav-icon {
