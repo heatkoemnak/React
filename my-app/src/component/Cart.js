@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import "./cart.css";
 import data from "./Data";
 
+
+
 // import Image from "../screen/asset/fashion4.jpg";
 
 const Cart = ({ cart, props }) => {
   //set function closeCart
-  const [removecart, setSetRemoveCart] = useState();
-  const handleRemove = (id) => {
-    const newCart = cart.filter((cartItem) => cartItem.id !== id);
-    setSetRemoveCart(newCart);
+  const [removecart, setSetRemoveCart] = useState(cart);
+  const handleRemove = (cart) => {
+    console.log(removecart);
   };
 
   const [quantityCart, setQuantityCart] = useState(1);
@@ -19,7 +20,6 @@ const Cart = ({ cart, props }) => {
   const handleMinus = () => {
     setQuantityCart(quantityCart - 1);
   };
-  const [CART, setCART] = useState(1);
 
   return (
     <div className="Cart">
@@ -45,7 +45,12 @@ const Cart = ({ cart, props }) => {
             <>
               <tr key={cartItem.id}>
                 <td class="image">
-                  <img src={cartItem.image} width={100} height={100} alt="" />
+                  <img
+                    src={cartItem.image}
+                    width={100}
+                    height={100}
+                    alt={cartItem.name}
+                  />
                 </td>
                 <td className="product-name">{cartItem.name}</td>
                 <td>
@@ -75,7 +80,10 @@ const Cart = ({ cart, props }) => {
                 </td>
                 <td className="sub-price">${cartItem.price}</td>
                 <td className="sub-price">${cartItem.price * quantityCart}</td>
-                <td className="remove-item">
+                <td
+                  className="remove-item"
+                  onClick={() => handleRemove(removecart)}
+                >
                   <i class="bx bx-trash-alt"></i>
                 </td>
               </tr>
@@ -106,7 +114,6 @@ const Cart = ({ cart, props }) => {
           Checkout <i class="fa fa-arrow-circle-right"></i>
         </button>
       </div>
-      {CART}
     </div>
   );
 };

@@ -12,8 +12,8 @@ import Cart from "../../component/Cart";
 import Navbar from "../../component/navbar";
 import MenuProduct from "../../component/MenuProduct";
 
-const HomeScreen = (props) => {
-  const [product, setProduct] = useState(data);
+const HomeScreen = () => {
+  const [product] = useState(data);
   const [cart, setTheCart] = useState([]);
   const addToCart = (data) => {
     setTheCart([...cart, { ...data, quantity: 1 }]);
@@ -31,11 +31,8 @@ const HomeScreen = (props) => {
       <Materails />
       <SearchProduct />
       <SeeMore />
-      {ShowCart ? (
-        <Cart cart={cart}></Cart>
-      ) : (
-        <Product product={product} addToCart={addToCart}></Product>
-      )}
+      {ShowCart ? <Cart cart={cart}></Cart> : null}
+      <Product product={product} addToCart={addToCart}></Product>
 
       <Related />
       <Footer />
