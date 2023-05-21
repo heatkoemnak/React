@@ -1,5 +1,6 @@
-import "./product.css"
+import "./product.css";
 const Product = ({ product, addToCart }) => {
+
   return (
     <div>
       <section className="Product" id="product">
