@@ -101,3 +101,12 @@ tbody > tr > td {
   font-size: medium;
   color: rgb(25, 23, 23);
 }
+
+.place-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  font-size: medium;
+  color: rgb(25, 23, 23);
+  background: #f5f5f5;
+}
