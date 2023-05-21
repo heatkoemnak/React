@@ -23,6 +23,11 @@ const HomeScreen = () => {
     setShowCart((ShowCart) => !ShowCart);
   };
 
+  const handleRemoveItem = (cart) => {
+    const newCart = cart.find((cartItem) => cartItem.id !== cart.id);
+    setTheCart(newCart);
+  };
+
   return (
     <>
       <Navbar count={cart.length} handleCart={handleCart}></Navbar>
@@ -31,7 +36,9 @@ const HomeScreen = () => {
       <Materails />
       <SearchProduct />
       <SeeMore />
-      {ShowCart ? <Cart cart={cart}></Cart> : null}
+      {ShowCart ? (
+        <Cart cart={cart} handleRemoveItem={handleRemoveItem}></Cart>
+      ) : null}
       <Product product={product} addToCart={addToCart}></Product>
 
       <Related />
