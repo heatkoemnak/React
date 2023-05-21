@@ -2,16 +2,10 @@ import React, { useState } from "react";
 import "./cart.css";
 import data from "./Data";
 
-
-
 // import Image from "../screen/asset/fashion4.jpg";
 
 const Cart = ({ cart, props }) => {
-  //set function closeCart
-  const [removecart, setSetRemoveCart] = useState(cart);
-  const handleRemove = (cart) => {
-    console.log(removecart);
-  };
+  //set removeitem hook
 
   const [quantityCart, setQuantityCart] = useState(1);
   const handlePlus = () => {
@@ -40,6 +34,13 @@ const Cart = ({ cart, props }) => {
             <td>Remove</td>
           </tr>
         </thead>
+        <div>
+          {cart.length === 0 && (
+            <div className="place-items">
+              <p>No Item are added.</p>
+            </div>
+          )}
+        </div>
         <tbody>
           {cart.map((cartItem) => (
             <>
@@ -82,7 +83,7 @@ const Cart = ({ cart, props }) => {
                 <td className="sub-price">${cartItem.price * quantityCart}</td>
                 <td
                   className="remove-item"
-                  onClick={() => handleRemove(removecart)}
+                  onClick={() => props.handleRemoveItem(cartItem)}
                 >
                   <i class="bx bx-trash-alt"></i>
                 </td>
