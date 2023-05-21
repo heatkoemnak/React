@@ -1,20 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./cart.css";
-import data from "./Data";
-
-// import Image from "../screen/asset/fashion4.jpg";
 
 const Cart = ({ cart, props }) => {
-  //set removeitem hook
-
-  const [quantityCart, setQuantityCart] = useState(1);
-  const handlePlus = () => {
-    setQuantityCart(quantityCart + 1);
-  };
-  const handleMinus = () => {
-    setQuantityCart(quantityCart - 1);
-  };
-
+  
   return (
     <div className="Cart">
       <div className="shopping-cart">
@@ -72,15 +60,16 @@ const Cart = ({ cart, props }) => {
                 </td>
                 <td>
                   <div className="quantity">
-                    <button className="sub-btn" onClick={handleMinus}>
-                      -
-                    </button>
-                    <span>{quantityCart}</span>
+                    <button className="sub-btn">-</button>
+                    <span>{cartItem.guantity}</span>
+
                     <button className="plus-btn">+</button>
                   </div>
                 </td>
                 <td className="sub-price">${cartItem.price}</td>
-                <td className="sub-price">${cartItem.price * quantityCart}</td>
+                <td className="sub-price">
+                  ${cartItem.price * cartItem.quantity}
+                </td>
                 <td
                   className="remove-item"
                   onClick={() => props.handleRemoveItem(cartItem)}
