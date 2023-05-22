@@ -28,8 +28,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <h3 className="header">RECYCLING WEBSITE</h3>
+        {/* <h3 className="header">RECYCLING WEBSITE</h3> */}
         <Routes>
+
           <Route path="/" element={<HomeScreen />} />
           <Route path="/Service" element={<ServiceScreen />} />
           <Route path="/Shop" element={<ShopScreen />} />
