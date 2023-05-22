@@ -1,0 +1,20 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-links {
+  display: flex;
+  align-items: center;
+}
+.item-link {
+  margin: 0 5px;
+  padding: 5px;
+  border-right:2px solid #ffba30;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
