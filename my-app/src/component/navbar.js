@@ -6,13 +6,13 @@ function Navbar(props) {
   return (
     <>
       <nav className="nav-bar">
-        <h1 className="logo">Anti WastE</h1>
-        <div className="nav-container">
-          <li>
-            <Link className="item" to="/">
-              Home
-            </Link>
-          </li>
+        <h1 className="logo">
+          {" "}
+          <Link className="item" to="/">
+            Anti WastE
+          </Link>
+        </h1>
+        {/* <div className="nav-container">
           <li>
             <Link className="item" to="/Service">
               Services
@@ -33,9 +33,18 @@ function Navbar(props) {
               Team
             </Link>
           </li>
+        </div> */}
+        <div className="search-bar">
+          <input
+            className="search-input"
+            type="text"
+            placeholder="Search for products"
+          />
+          <button className="search-btn">
+            <i className="bx bx-search"></i>
+          </button>
         </div>
         <div className="nav-icon" id="nav-icon">
-          <i className="bx bx-search btn-search"></i>
           <i
             onClick={() => props.handleCart(true)}
             className="bx bxs-cart-download icon "
@@ -43,15 +52,6 @@ function Navbar(props) {
           >
             <sup className="count-cart">{props.count}</sup>
           </i>
-          <Link to="/Login" className="sign-account">
-            <div className="log-to-signin">
-              <p>Hello👋</p>
-              <Link className="login" id="cta">
-                Sign In
-              </Link>
-            </div>
-            <p>Account</p>
-          </Link>
         </div>
       </nav>
     </>
