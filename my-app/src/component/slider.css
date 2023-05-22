@@ -17,6 +17,8 @@
   width: 20%;
 }
 .feature-list {
+  display: flex;
+  align-items: center;
   padding: 10px;
   font-size: 1.2rem;
   color: var(--white-color);

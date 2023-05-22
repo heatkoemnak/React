@@ -40,12 +40,15 @@ function Slider() {
     <div className="campagn">
       <div className="feature">
         <Link className="feature-list" to="/">
+          <i class="bx bx-store"></i>
           Sell Your Products
         </Link>
         <Link className="feature-list" to="/Service">
+          <i class="bx bxs-donate-blood"></i>
           Service Provider
         </Link>
         <Link className="feature-list" to="/Shop">
+          <i class="bx bx-station"></i>
           Nearby Enterprise
         </Link>
         <div className="location">

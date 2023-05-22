@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import logo from "../screen/asset/Anti2.png";
 
 function Navbar(props) {
   return (
@@ -9,7 +10,8 @@ function Navbar(props) {
         <h1 className="logo">
           {" "}
           <Link className="item" to="/">
-            Anti WastE
+            <img src={logo} alt="anti" width="300" />
+
           </Link>
         </h1>
         {/* <div className="nav-container">

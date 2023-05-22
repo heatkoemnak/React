@@ -1,5 +1,5 @@
 .menu-category {
-  background-color: #4cb50b;
+  background-color: #ffffff;
   margin-bottom: 1px;
   position: sticky;
   top: 75;
@@ -7,7 +7,7 @@
 .menu-content {
   width: 80%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -33,13 +33,13 @@
   border-bottom: 1px solid var(--green-primary-color);
 }
 .menu-item a {
-  color: var(--white-secondary-color);
+  color: var(--dark-green-color);
   font-size: 1.1rem;
   font-weight: 400;
   text-decoration: none;
   margin-left: 10px;
 }
 .menu-item a:hover {
-  color: var(--dark-green-color);
+  color: var(--green-primary-color);
   transition: none;
 }

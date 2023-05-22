@@ -49,9 +49,11 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 4rem;
+  padding: 0 4rem;
   /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
-  background-color: #81f450;
+  /* background-color: #81f450; */
+  background: #22be02;
+
   z-index: 1;
 }
 .nav-container {

@@ -17,15 +17,21 @@ function header(props) {
               Services
             </Link>
           </li>
+
           <li>
-            <Link className="item-link" to="/Shop">
-              Contact Us
+            <Link className="item-link" to="/Contact">
+              Contact us
+              <div className="nav-link-contact-icon">
+                <i class="bx bxl-facebook-circle link-icon"></i>
+                <i class="bx bxl-twitter link-icon"></i>
+              </div>
             </Link>
           </li>
         </div>
         <div className="nav-icon" id="nav-icon">
           <li>
             <Link className="item-link" to="/Contact">
+              <i class="bx bx-question-mark link-icon"></i>
               Support
             </Link>
           </li>
