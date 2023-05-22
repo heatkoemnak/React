@@ -28,7 +28,7 @@ function header(props) {
             </Link>
           </li>
         </div>
-        <div className="nav-icon" id="nav-icon">
+        <div className="nav-link-right">
           <li>
             <Link className="item-link" to="/Contact">
               <i class="bx bx-question-mark link-icon"></i>
@@ -41,10 +41,10 @@ function header(props) {
             </Link>
           </li>
           <li>
-            <Link to="/login">Login</Link>
+            <Link>Register</Link>
           </li>
           <li>
-            <Link>Register</Link>
+            <Link to="/login">Login</Link>
           </li>
         </div>
       </div>

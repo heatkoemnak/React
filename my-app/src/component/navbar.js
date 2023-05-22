@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import logo from "../screen/asset/Anti2.png";
+import logo from "../screen/asset/anti.png";
 import "../App.css";
 
 function Navbar(props) {
@@ -25,13 +25,14 @@ function Navbar(props) {
             <i className="bx bx-search"></i>
           </button>
         </div>
-        <div className="nav-icon" id="nav-icon">
+        <div className="nav-icon">
           <i
             onClick={() => props.handleCart(true)}
-            className="bx bxs-cart-download icon "
-            id="shopping-cart"
+            className="bx bxs-cart-download cart-icon "
           >
-            <sup className="count-cart">{props.count}</sup>
+            <div className="count-item">
+              <span className="value-count">{props.count}</span>
+            </div>
           </i>
         </div>
       </nav>
