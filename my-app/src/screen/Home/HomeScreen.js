@@ -3,7 +3,6 @@ import { useState } from "react";
 import Product from "../../component/Product";
 import data from "../../component/Data";
 import SeeMore from "../../component/seeMore";
-import SearchProduct from "../../component/searchProduct";
 import Slider from "../../component/slider";
 import Related from "../../component/Related";
 import Materails from "../../component/materials ";
@@ -37,7 +36,6 @@ const HomeScreen = () => {
       <MenuProduct />
       <Slider />
       <Materails />
-      <SearchProduct />
       <SeeMore />
       {ShowCart ? (
         <Cart cart={cart} handleRemoveItem={handleRemoveItem}></Cart>
