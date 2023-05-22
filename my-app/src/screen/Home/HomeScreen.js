@@ -11,6 +11,8 @@ import Footer from "../../component/footer";
 import Cart from "../../component/Cart";
 import Navbar from "../../component/navbar";
 import MenuProduct from "../../component/MenuProduct";
+import Header from "../../component/header"
+
 
 const HomeScreen = () => {
   const [product] = useState(data);
@@ -30,6 +32,7 @@ const HomeScreen = () => {
 
   return (
     <>
+      <Header/>
       <Navbar count={cart.length} handleCart={handleCart}></Navbar>
       <MenuProduct />
       <Slider />
