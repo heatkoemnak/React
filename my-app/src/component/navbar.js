@@ -11,31 +11,9 @@ function Navbar(props) {
           {" "}
           <Link className="item" to="/">
             <img src={logo} alt="anti" width="300" />
-
           </Link>
         </h1>
-        {/* <div className="nav-container">
-          <li>
-            <Link className="item" to="/Service">
-              Services
-            </Link>
-          </li>
-          <li>
-            <Link className="item" to="/Shop">
-              Shop
-            </Link>
-          </li>
-          <li>
-            <Link className="item" to="/Contact">
-              Contact us
-            </Link>
-          </li>
-          <li>
-            <Link className="item" to="/Team">
-              Team
-            </Link>
-          </li>
-        </div> */}
+
         <div className="search-bar">
           <input
             className="search-input"
