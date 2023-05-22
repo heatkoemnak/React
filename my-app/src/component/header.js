@@ -34,24 +34,12 @@ function header(props) {
               Team
             </Link>
           </li>
-
-          <i className="bx bx-search btn-search"></i>
-          <i
-            onClick={() => props.handleCart(true)}
-            className="bx bxs-cart-download icon "
-            id="shopping-cart"
-          >
-            <sup className="count-cart">{props.count}</sup>
-          </i>
-          <Link to="/Login" className="sign-account">
-            <div className="log-to-signin">
-              <p>Hello👋</p>
-              <Link className="login" id="cta">
-                Sign In
-              </Link>
-            </div>
-            <p>Account</p>
-          </Link>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+          <li>
+            <Link>Register</Link>
+          </li>
         </div>
       </div>
     </>

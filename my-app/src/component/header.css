@@ -1,7 +1,13 @@
 .header-container {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #81f450;
+  
+  padding:10px 20px;
+
 }
 .item-links {
   display: flex;
@@ -11,10 +17,16 @@
   margin: 0 5px;
   padding: 5px;
   border-right:2px solid #ffba30;
-  color: #000;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
+
+}
+.item-link:hover{
+  color: #064b66;
+  transition: 0.3s;
 }
