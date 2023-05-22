@@ -1,41 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../../../component/navbar"
-import MenuProduct from "../../../component/MenuProduct"
+import Navbar from "../../../component/navbar";
+import MenuProduct from "../../../component/MenuProduct";
 
 import bag1 from "../../../screen/asset/bag1.jpg";
-import bag2 from "../../../screen/asset/bag2.jpg";
 import bag3 from "../../../screen/asset/bag3.jpg";
-import bag4 from "../../../screen/asset/bag4.webp";
 import bag5 from "../../../screen/asset/bag5.webp";
 import bag6 from "../../../screen/asset/bag6.jpg";
 import bag7 from "../../../screen/asset/bag7.jpg";
 import bag8 from "../../../screen/asset/bag8.avif";
 import bag9 from "../../../screen/asset/bag9.png";
-import bag10 from "../../../screen/asset/bag10.jpg";
-import bag11 from "../../../screen/asset/bag11.jpg";
 
-import related1 from "../../../screen/asset/related_to_recycle1.jpg";
 import related2 from "../../../screen/asset/related_to_recycle2.jpg";
-import related3 from "../../../screen/asset/related_to_recycle3.jpg";
-import related4 from "../../../screen/asset/related_to_recycle4.jpg";
 import related5 from "../../../screen/asset/related_to_recycle5.jpg";
-import related6 from "../../../screen/asset/related_to_recycle6.jpg";
-import related7 from "../../../screen/asset/related_to_recycle7.jpg";
-import related8 from "../../../screen/asset/related_to_recycle8.jpg";
-import related9 from "../../../screen/asset/related_to_recycle9.jpg";
-import related10 from "../../../screen/asset/related_to_recycle10.jpg";
 import related11 from "../../../screen/asset/related-to-recycle11.jpg";
 
 function BagScreen() {
   return (
     <>
-    <Navbar/>
-    <MenuProduct/>
-      <div className="search-product">
-        <input type="text" placeholder="Search Product" />
-        <button className="search-btn">Search</button>
-      </div>
+      <Navbar />
+      <MenuProduct />
+
       <section class="Product" id="product">
         <div class="product-container" id="product-container">
           <div class="product-info" id="product-info">

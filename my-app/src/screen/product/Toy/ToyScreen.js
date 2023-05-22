@@ -7,10 +7,6 @@ function ToyScreen() {
     <>
       <Navbar />
       <MenuProduct />
-      <div className="search-product">
-        <input type="text" placeholder="Search Product" />
-        <button className="search-btn">Search</button>
-      </div>
     </>
   );
 }

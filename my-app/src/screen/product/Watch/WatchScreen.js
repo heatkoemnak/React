@@ -4,26 +4,13 @@ import Navbar from "../../../component/navbar";
 import MenuProduct from "../../../component/MenuProduct";
 
 //inport watch from homeScreen
-import watch1 from "../../../screen/asset/watch1.webp";
-import watch2 from "../../../screen/asset/watch2.jpg";
-import watch3 from "../../../screen/asset/watch3.webp";
-import watch4 from "../../../screen/asset/watch4.webp";
 import watch5 from "../../../screen/asset/watch5.jpg";
 import watch6 from "../../../screen/asset/watch6.jpg";
 import watch7 from "../../../screen/asset/watch7.jpg";
 import watch8 from "../../../screen/asset/watch8.webp";
-import watch9 from "../../../screen/asset/watch9.webp";
 
-import related1 from "../../../screen/asset/related_to_recycle1.jpg";
 import related2 from "../../../screen/asset/related_to_recycle2.jpg";
-import related3 from "../../../screen/asset/related_to_recycle3.jpg";
-import related4 from "../../../screen/asset/related_to_recycle4.jpg";
 import related5 from "../../../screen/asset/related_to_recycle5.jpg";
-import related6 from "../../../screen/asset/related_to_recycle6.jpg";
-import related7 from "../../../screen/asset/related_to_recycle7.jpg";
-import related8 from "../../../screen/asset/related_to_recycle8.jpg";
-import related9 from "../../../screen/asset/related_to_recycle9.jpg";
-import related10 from "../../../screen/asset/related_to_recycle10.jpg";
 import related11 from "../../../screen/asset/related-to-recycle11.jpg";
 
 function Watchcreen() {
@@ -31,10 +18,7 @@ function Watchcreen() {
     <>
       <Navbar />
       <MenuProduct />
-      <div className="search-product">
-        <input type="text" placeholder="Search Product" />
-        <button className="search-btn">Search</button>
-      </div>
+
       <section class="Product" id="product">
         <div class="product-container" id="product-container">
           <div class="product-info" id="product-info">

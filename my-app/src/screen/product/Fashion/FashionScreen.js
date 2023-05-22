@@ -1,11 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../../../component/navbar"
-import MenuProduct from "../../../component/MenuProduct"
-
-
-
-
+import Navbar from "../../../component/navbar";
+import MenuProduct from "../../../component/MenuProduct";
 
 //import fashion img
 import fashion1 from "../../../screen/asset/fashion1.jpg";
@@ -18,27 +14,16 @@ import fashion7 from "../../../screen/asset/fashion7.jpg";
 import fashion8 from "../../../screen/asset/fashion8.jpg";
 import fashion9 from "../../../screen/asset/fashion9.jpg";
 
-import related1 from "../../../screen/asset/related_to_recycle1.jpg";
 import related2 from "../../../screen/asset/related_to_recycle2.jpg";
-import related3 from "../../../screen/asset/related_to_recycle3.jpg";
-import related4 from "../../../screen/asset/related_to_recycle4.jpg";
 import related5 from "../../../screen/asset/related_to_recycle5.jpg";
-import related6 from "../../../screen/asset/related_to_recycle6.jpg";
-import related7 from "../../../screen/asset/related_to_recycle7.jpg";
-import related8 from "../../../screen/asset/related_to_recycle8.jpg";
-import related9 from "../../../screen/asset/related_to_recycle9.jpg";
-import related10 from "../../../screen/asset/related_to_recycle10.jpg";
 import related11 from "../../../screen/asset/related-to-recycle11.jpg";
 
 function FashionScreen() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <MenuProduct />
-      <div className="search-product">
-        <input type="text" placeholder="Search Product" />
-        <button className="search-btn">Search</button>
-      </div>
+
       <section className="Product" id="product">
         <div className="product-container" id="product-container">
           <div className="product-info" id="product-info">
