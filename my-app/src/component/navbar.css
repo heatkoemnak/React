@@ -49,8 +49,8 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 5px 4rem;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
   background-color: #81f450;
   z-index: 1;
 }
@@ -113,4 +113,37 @@ button {
   background-color: var(--middle-green-color);
   border-radius: 3px;
   padding: 1px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 70%;
+}
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+}
+.search-input:hover {
+  border: 1px solid greenyellow;
+  outline: none;
+}
+.search-input:focus {
+  border: 1px solid var(--white-secondary-color);
+  transition: 0.3s;
+  outline: none;
+}
+
+.search-btn {
+  font-size: 1.5rem;
+  color: var(--white-secondary-color);
+  background-color: var(--middle-green-color);
+  border: none;
+  cursor: pointer;
+  margin-right: 6px;
+  padding: 0 10px;
 }
