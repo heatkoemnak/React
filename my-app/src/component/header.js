@@ -41,10 +41,12 @@ function header(props) {
             </Link>
           </li>
           <li>
-            <Link>Register</Link>
+            <Link className="item-link">Register|</Link>
           </li>
           <li>
-            <Link to="/login">Login</Link>
+            <Link to="/login" className="item-link">
+              Login
+            </Link>
           </li>
         </div>
       </div>
