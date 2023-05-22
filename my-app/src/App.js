@@ -3,7 +3,6 @@ import React from "react";
 import ContactScreen from "../src/screen/Contact/ContactScreen";
 import HomeScreen from "../src/screen/Home/HomeScreen";
 import ServiceScreen from "../src/screen/Service/ServiceScreen";
-import ShopScreen from "../src/screen/Shop/ShoScreen";
 import TeamScreen from "../src/screen/Team/TeamScreen";
 
 //commponents
@@ -28,12 +27,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <h3 className="header">RECYCLING WEBSITE</h3> */}
         <Routes>
-
           <Route path="/" element={<HomeScreen />} />
           <Route path="/Service" element={<ServiceScreen />} />
-          {/* <Route path="/Shop" element={<ShopScreen />} /> */}
           <Route path="/Contact" element={<ContactScreen />} />
           <Route path="/Team" element={<TeamScreen />} />
           <Route path="/Login" element={<Login />} />

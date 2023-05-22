@@ -1,3 +1,15 @@
+:root {
+  --green-primary-color: rgb(154, 213, 2);
+  --white: #ffffff;
+  --black-tertiary-color: #000000;
+  --navbar-background-color: #22be02;
+  --yellow-text-color: #ffd900;
+  --menu-item-color: #848484;
+  --dark-green-color: #28400c;
+  --middle-green-color: #305704;
+  --menu-green-color: #4cb50b;
+}
+
 .logo {
   font-weight: 700;
   text-transform: uppercase;
@@ -26,20 +38,6 @@ button {
   -o-transition: all 0.4s ease-in-out;
 }
 
-.header {
-  width: 100%;
-  background-color: rgb(224, 224, 224);
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 20px;
-  padding: 10px;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-  text-align: center;
-}
-
 .nav-bar {
   position: sticky;
   top: 0;
@@ -51,9 +49,7 @@ button {
   align-items: center;
   padding: 0 4rem;
   /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
-  /* background-color: #81f450; */
-  background: #22be02;
-
+  background: var(--navbar-background-color);
   z-index: 1;
 }
 .nav-container {
@@ -74,7 +70,7 @@ button {
   -o-transition: all 0.4s ease-in-out;
 }
 .nav-container .item:hover {
-  color: var(--white-secondary-color);
+  color: var(--white);
   transition: none;
 }
 .nav-icon {
@@ -91,13 +87,7 @@ button {
   padding: 1px;
   background-color: #ffffff;
 }
-.nav-icon input[type="text"] {
-  color: var(--secondary-color);
-  border: none;
-  border-radius: 3px;
-  padding: 5px;
-  font-size: 1rem;
-}
+
 .nav-icon .count-cart {
   position: relative;
   top: -5px;
@@ -108,13 +98,6 @@ button {
   padding: 3px;
   font-size: 1.2rem;
   font-weight: 700;
-}
-.btn-search {
-  font-size: 1.5rem;
-  color: var(--white-secondary-color);
-  background-color: var(--middle-green-color);
-  border-radius: 3px;
-  padding: 1px;
 }
 
 .search-bar {
