@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import { useState } from "react";
 import Product from "../../component/Product";
@@ -10,35 +11,34 @@ import Footer from "../../component/footer";
 import Cart from "../../component/Cart";
 import Navbar from "../../component/navbar";
 import MenuProduct from "../../component/MenuProduct";
-import Header from "../../component/header"
-
+import Header from "../../component/header";
 
 const HomeScreen = () => {
   const [product] = useState(data);
-  const [cart, setTheCart] = useState([]);
-  const addToCart = (data) => {
-    setTheCart([...cart, { ...data, quantity: 1 }]);
+  const [cart, setCart] = useState([]);
+  const addToCart = (product) => {
+    setCart([...cart, { ...product, quantity: 1 }]);
   };
   const [ShowCart, setShowCart] = useState(false);
   const handleCart = () => {
     setShowCart((ShowCart) => !ShowCart);
   };
 
-  const handleRemoveItem = (cart) => {
-    const newCart = cart.find((cartItem) => cartItem.id !== cart.id);
-    setTheCart(newCart);
+  const removeItemFromCart = (cartItem) => {
+    setCart((cart) => cart.map((item) => item.cartItem !== cartItem));
   };
 
   return (
     <>
-      <Header/>
+      <Header />
       <Navbar count={cart.length} handleCart={handleCart}></Navbar>
       <MenuProduct />
+      {/* <Cart cart={cart} removeItem={removeItem}></Cart> */}
       <Slider />
       <Materails />
       <SeeMore />
       {ShowCart ? (
-        <Cart cart={cart} handleRemoveItem={handleRemoveItem}></Cart>
+        <Cart cart={cart} removeItemFromCart={removeItemFromCart}></Cart>
       ) : null}
       <Product product={product} addToCart={addToCart}></Product>
 
