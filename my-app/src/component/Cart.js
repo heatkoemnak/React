@@ -1,7 +1,7 @@
 import React from "react";
 import "./cart.css";
 
-const Cart = ({ cart, handleCart, removeItemFromCart }) => {
+const Cart = ({ cart, qty, qtyMinus, removeItemFromCart }) => {
   return (
     <div className="Cart">
       <div className="shopping-cart">
@@ -16,15 +16,28 @@ const Cart = ({ cart, handleCart, removeItemFromCart }) => {
                   <img
                     src={cartItem.image}
                     alt={cartItem.name}
-                    width={100}
-                    height={100}
+                    width={90}
+                    height={90}
                   />
                 </div>
                 <div className="item-details">
                   <div className="item-name">{cartItem.name}</div>
-                  <div className="item-price">${cartItem.price}</div>
+                </div>
+                <div className="qty">
+                  <button onClick={() => qtyMinus(cartItem.id)}>-</button>
+                  <div className="qty-value">{cartItem.quantity}</div>
+                  <button onClick={() => qty(cartItem.id)}>+</button>
+                </div>
+                <div className="price">
+                  <div className="item-price">${cartItem.price.toFixed(2)}</div>
+                  <div className="sub-total">
+                    ${(cartItem.price * cartItem.quantity).toFixed(2)}
+                  </div>
                   <div className="remove-item">
-                    <button onClick={() => removeItemFromCart(cartItem.id)}>
+                    <button
+                      className="btn-remove"
+                      onClick={() => removeItemFromCart(cartItem.id)}
+                    >
                       Remove
                     </button>
                   </div>
@@ -36,11 +49,14 @@ const Cart = ({ cart, handleCart, removeItemFromCart }) => {
       </div>
       <div className="total">
         <div className="total-price">
-          <span>Total</span>
+          <span>Total Price</span>
           <span>
-            {cart.map((cartItem) => {
-              return <div>{cartItem.price * cartItem.quantity}</div>;
-            })}
+            $
+            {cart
+              .reduce((total, item) => {
+                return total + item.price * item.quantity;
+              }, 0)
+              .toFixed(2)}
           </span>
         </div>
         <div className="checkout">
