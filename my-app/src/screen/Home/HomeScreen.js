@@ -61,7 +61,6 @@ const HomeScreen = () => {
         ></Cart>
       ) : null}
       <Product product={product} addToCart={addToCart}></Product>
-
       <Related />
       <Footer />
     </>

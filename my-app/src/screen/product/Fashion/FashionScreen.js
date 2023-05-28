@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../../component/navbar";
 import MenuProduct from "../../../component/MenuProduct";
+// import Cart from "../../../component/Cart";
+// import data from "../../../component/Data";
+import Product from "../../../component/Product";
 
 //import fashion img
 import fashion1 from "../../../screen/asset/fashion1.jpg";
@@ -18,11 +21,12 @@ import related2 from "../../../screen/asset/related_to_recycle2.jpg";
 import related5 from "../../../screen/asset/related_to_recycle5.jpg";
 import related11 from "../../../screen/asset/related-to-recycle11.jpg";
 
-function FashionScreen() {
+function FashionScreen({ addToCart, product }) {
   return (
     <>
       <Navbar />
       <MenuProduct />
+      <Product product={product} addToCart={addToCart}></Product>
 
       <section className="Product" id="product">
         <div className="product-container" id="product-container">
