@@ -25,7 +25,7 @@ const HomeScreen = () => {
   };
 
   const removeItemFromCart = (id) => {
-    console.log(cart.filter((item) => item.id !== id));
+    // console.log(cart.filter((item) => item.id !== id));
     setCart(cart.filter((item) => item.id !== id));
   };
 

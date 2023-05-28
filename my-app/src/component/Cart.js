@@ -7,6 +7,19 @@ const Cart = ({ cart, qty, qtyMinus, removeItemFromCart }) => {
       <div className="shopping-cart">
         <h2>SHOPPING CART</h2>
       </div>
+      <div className="cart-title">
+        <div className="cart-deltail">
+          <div className="cart-image">Image</div>
+          <div className="cart-name">Name</div>
+          <div className="-cart-qty">Quantity</div>
+        </div>
+
+        <div className="cart-price">
+          <div className="cart-item-price">Price</div>
+          <div className="cart-sub-total">Sub-Price</div>
+          <div className="cart-remove-item">Remove</div>
+        </div>
+      </div>
       <div className="cart">
         {cart.map((cartItem) => {
           return (
@@ -49,7 +62,7 @@ const Cart = ({ cart, qty, qtyMinus, removeItemFromCart }) => {
       </div>
       <div className="total">
         <div className="total-price">
-          <span>Total Price</span>
+          <span>Total </span>
           <span>
             $
             {cart
