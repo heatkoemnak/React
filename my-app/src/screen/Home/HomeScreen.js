@@ -24,8 +24,24 @@ const HomeScreen = () => {
     setShowCart((ShowCart) => !ShowCart);
   };
 
-  const removeItemFromCart = (cartItem) => {
-    setCart((cart) => cart.map((item) => item.cartItem !== cartItem));
+  const removeItemFromCart = (id) => {
+    console.log(cart.filter((item) => item.id !== id));
+    setCart(cart.filter((item) => item.id !== id));
+  };
+
+  const qty = (id) => {
+    setCart(
+      cart.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+      )
+    );
+  };
+  const qtyMinus = (id) => {
+    setCart(
+      cart.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity - 1 } : item
+      )
+    );
   };
 
   return (
@@ -33,12 +49,16 @@ const HomeScreen = () => {
       <Header />
       <Navbar count={cart.length} handleCart={handleCart}></Navbar>
       <MenuProduct />
-      {/* <Cart cart={cart} removeItem={removeItem}></Cart> */}
       <Slider />
       <Materails />
       <SeeMore />
       {ShowCart ? (
-        <Cart cart={cart} removeItemFromCart={removeItemFromCart}></Cart>
+        <Cart
+          cart={cart}
+          removeItemFromCart={removeItemFromCart}
+          qty={qty}
+          qtyMinus={qtyMinus}
+        ></Cart>
       ) : null}
       <Product product={product} addToCart={addToCart}></Product>
 

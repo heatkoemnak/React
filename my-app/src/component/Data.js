@@ -49,21 +49,21 @@ const data = [
     id: 2,
     name: "Mini Luvis",
     image: shoes6,
-    price: 80,
+    price: 80.55,
     description: " Product product-details dverbgern erhehtr erehge",
   },
   {
     id: 3,
     name: "Li Maton",
     image: shoes7,
-    price: 60,
+    price: 60.20,
     description: " Product product-details dverbgern erhehtr erehge",
   },
   {
     id: 4,
     name: "Luvis Jecket",
     image: shoes8,
-    price: 30.0,
+    price: 30.40,
     description: "Product product-details dverbgern erhehtr erehge",
   },
 
@@ -130,7 +130,7 @@ const data = [
     id: 13,
     name: "Jecket Treamvelet",
     image: bag1,
-    price: 150.0,
+    price: 150.10,
     description: " Product product-details dverbgern erhehtr erehge",
   },
   {
@@ -144,7 +144,7 @@ const data = [
     id: 15,
     name: "Li Maton",
     image: bag3,
-    price: 60,
+    price: 60.50,
     description: " Product product-details dverbgern erhehtr erehge",
   },
   {
