@@ -86,12 +86,20 @@
   display: flex;
   justify-content: space-between;
 }
-.product-card .bx-star,
-.bxs-star-half {
-  color: rgb(255, 213, 0);
 
-  padding: 5 0;
+.star {
+  font-size: 1.2rem;
+  margin-top: 5px;
 }
+.star i {
+  color: rgb(190, 189, 189);
+  margin-left: 3px;
+}
+.star:hover {
+  color: rgb(255, 208, 0);
+  transition: all 0.42 ease;
+}
+
 .bx-shopping-bag {
   background-color: rgb(71, 107, 43);
   color: #ffffff;
