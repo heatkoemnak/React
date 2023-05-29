@@ -1,0 +1,125 @@
+.Cart {
+  position: fixed;
+  top: 142px;
+  right: 0;
+  width: 100%;
+  max-width: 600px;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  padding: 10px;
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.cart .cart-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.item-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+.item-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  margin-left: 10px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  width: 100%;
+}
+.btn-remove {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.qty {
+  background-color: rgb(243, 255, 234);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+}
+.qty button {
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  padding: 0 3px;
+}
+.total {
+  display: block;
+  align-items: center;
+}
+.total-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+.total-price span {
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 2px solid red;
+}
+.checkout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+.checkout button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.cart-deltail {
+  width: 63%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  
+}
+.cart-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 37%;
+  padding: 20px 0;
+}

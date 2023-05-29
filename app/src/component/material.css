@@ -1,0 +1,47 @@
+.materails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  align-items: center;
+  gap: 30px;
+  margin: 0 auto;
+
+  padding: 10px;
+
+  width: 80%;
+  background: #ddfff1;
+  border-bottom: 2px solid #ccc;
+  
+}
+.materail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.materail img {
+  margin: 0 auto;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 3px solid rgb(62, 124, 10);
+  padding: 8px;
+  transition: calc(0.5s);
+  object-fit: fill;
+}
+.materail img:hover {
+  transform: scale(1.1);
+  transition: calc(0.5s);
+  padding: 2px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(181, 175, 175);
+  border-radius: 50%;
+  background-color: #90d640;
+  color: white;
+  cursor: pointer;
+}
