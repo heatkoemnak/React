@@ -1,5 +1,12 @@
 import "./product.css";
+import React, { useState } from "react";
+
+//react-icons
+import { FaStar } from "react-icons/fa";
 const Product = ({ product, addToCart }) => {
+  const star = Array(5).fill(0);
+  const [rating, setRating] = useState(null);
+  const [hover, setHover] = useState(null);
   return (
     <div>
       <section className="Product" id="product">
@@ -21,11 +28,25 @@ const Product = ({ product, addToCart }) => {
                 <div className="product-details">{productItem.description}</div>
                 <div className="product-card" id="card">
                   <div className="star">
-                    <i class="fa fa-star bx-star"></i>
-                    <i class="fa fa-star bx-star"></i>
-                    <i class="fa fa-star bx-star"></i>
-                    <i class="fa fa-star bx-star"></i>
-                    <i class="fa fa-star bx-star-half"></i>
+                    {star.map((_, index) => {
+                      const current = (index += 1);
+
+                      return (
+                        <label key={index}>
+                          <FaStar
+                            className="star"
+                            color={
+                              current <= (hover || rating)
+                                ? "#ffc107"
+                                : "#e4e5e9"
+                            }
+                            onMouseEnter={() => setHover(current)}
+                            onMouseLeave={() => setHover(null)}
+                            onClick={() => setRating(current)}
+                          />
+                        </label>
+                      );
+                    })}
                   </div>
                   <i
                     onClick={() => addToCart(productItem)}
