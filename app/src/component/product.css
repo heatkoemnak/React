@@ -12,6 +12,10 @@
   height: 230px;
   margin: 0 auto;
   object-fit: fill;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+
 }
 .product-container {
   display: flex;
@@ -19,11 +23,13 @@
   width: 100%;
   gap: 16.2px;
   margin-top: 10px;
+
 }
 .product-info {
   cursor: pointer;
   width: 230px;
   background-color: rgb(255, 255, 255);
+  border-radius: 8px;
 }
 .product-info:hover {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);

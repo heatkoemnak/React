@@ -15,6 +15,8 @@ import fashion5 from "../../asset/fashion5.jpg";
 import fashion6 from "../../asset/fashion6.jpg";
 import fashion7 from "../../asset/fashion7.jpg";
 import fashion8 from "../../asset/fashion8.jpg";
+import fashion10 from "../../asset/fashion10.jpg";
+import fashion11 from "../../asset/fashion11.jpg";
 
 function FashionScreen() {
   const [product] = useState([
@@ -71,6 +73,20 @@ function FashionScreen() {
       id: 8,
       name: "Product 8",
       image: fashion8,
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      price: 20,
+    },
+    {
+      id: 9,
+      name: "Product 7",
+      image: fashion10,
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      price: 10,
+    },
+    {
+      id: 10,
+      name: "Product 8",
+      image: fashion11,
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       price: 20,
     },

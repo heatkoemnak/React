@@ -11,6 +11,7 @@ import shoes5 from "../../../screen/asset/shoes5.jpg";
 import shoes6 from "../../../screen/asset/shoes6.jpg";
 import shoes7 from "../../../screen/asset/shoes7.jpg";
 import shoes8 from "../../../screen/asset/shoes8.jpg";
+import shoes9 from "../../../screen/asset/shoes9.jpg";
 
 function ShoesScreen() {
   const product = [
@@ -19,8 +20,7 @@ function ShoesScreen() {
       name: "Jecket Treamvelet",
       price: 150.0,
       image: shoes5,
-      description:
-        "Product product-details dverbgern erhehtr erehge Product product-details dverbgern erhehtr erehge Product product-details dverbgern erhehtr erehge",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
       id: 2,
@@ -28,24 +28,28 @@ function ShoesScreen() {
       name: "Mini Luvis",
       price: 80.0,
       image: shoes6,
-      description:
-        "Product product-details dverbgern erhehtr erehge Product product-details dverbgern erhehtr erehge Product product-details dverbgern erhehtr erehge",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
       id: 3,
       name: "Mini Luvis",
       price: 60.0,
       image: shoes7,
-      description:
-        "Product product-details dverbgern erhehtr erehge Product product-details dverbgern erhehtr erehge Product product-details dverbgern erhehtr erehge",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
       id: 4,
       name: "Luvis Jecket",
       price: 30.0,
       image: shoes8,
-      description:
-        "Product product-details dverbgern erhehtr erehge Product product-details dverbgern erhehtr erehge Product product-details dverbgern erhehtr erehge",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      id: 5,
+      name: "Luvis Jecket",
+      price: 30.0,
+      image: shoes9,
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
   ];
   const [cart, setCart] = useState([]);
