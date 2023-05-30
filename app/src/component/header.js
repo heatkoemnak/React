@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 
-function header(props) {
+function header() {
   return (
     <>
       <div className="header-container">
