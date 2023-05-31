@@ -22,7 +22,6 @@
   font-size: 1.2rem;
   color: var(--white-color);
   cursor: pointer;
-  text-transform: uppercase;
 }
 .feature-list:hover {
   background-color: #63e511;
@@ -31,43 +30,26 @@
 }
 .location {
   display: flex;
-  background-color: var(--green-primary-color);
+  background-color:green;
   color: var(--white-secondary-color);
-  width: 95%;
-  margin: 15px auto;
+  width: 90%;
+  margin: 0.5px auto;
   border-radius: 10px;
-  border: 1px solid #60ff34;
+  border: 1px solid #ffffff;
 }
-.wrap-location {
-  display: flex;
-  align-items: center;
-  margin: 10px;
-  width: 100%;
-  position: relative;
-}
-
 .location-text {
-  position: absolute;
-  bottom: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: #02663c;
-  opacity: 0.7;
 }
 
-.location-text:hover {
-  background-color: #02663c;
-  opacity: 0.9;
-  cursor: pointer;
-  transition: 0.7s;
-}
-.wrap-text p {
-  font-size: 15px;
-}
 .wrap-location .locate-imag img {
-  width: 100%;
-  height: 100%;
+  margin: 10px;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
 }
+
 .banner {
   position: relative;
   display: flex;
