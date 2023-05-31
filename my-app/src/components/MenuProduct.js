@@ -25,7 +25,7 @@ function MenuProduct() {
         <Link className="item" to="/Toy">
           Toys
         </Link>
-        <Link className="item" to="/Accessories">
+        <Link className="item" to="/Accessary">
           Accessories
         </Link>
       </div>
