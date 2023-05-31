@@ -17,6 +17,7 @@ import FashionScreen from "../src/screen/product/Fashion/FashionScreen";
 import ShoesScreen from "../src/screen/product/Shoes/ShoesScreen";
 import ToyScreen from "../src/screen/product/Toy/ToyScreen";
 import WatchScreen from "../src/screen/product/Watch/WatchScreen";
+import DisplayCart from "../src/component/DisplayCart";
 
 //css
 import "./App.css";
@@ -42,6 +43,7 @@ function App() {
           <Route path="/Watch" element={<WatchScreen />} />
           <Route path="/Toy" element={<ToyScreen />} />
           <Route path="/Accessories" element={<AccessoriesScreen />} />
+          <Route path="/cart" element={<DisplayCart />} />
         </Routes>
       </div>
     </BrowserRouter>

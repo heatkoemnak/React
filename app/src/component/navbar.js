@@ -3,18 +3,17 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import logo from "../screen/asset/anti.png";
-import "../App.css";
 
 function Navbar(props) {
   return (
     <>
       <nav className="nav-bar">
-        <h1 className="logo">
+        <div className="logo">
           {" "}
           <Link className="item" to="/">
-            <img src={logo} alt="anti" width="300" />
+            <img src={logo} alt="anti" />
           </Link>
-        </h1>
+        </div>
 
         <div className="search-bar">
           <input

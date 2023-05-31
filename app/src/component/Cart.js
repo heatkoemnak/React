@@ -1,5 +1,6 @@
 import React from "react";
 import "./cart.css";
+import { Link } from "react-router-dom";
 
 const Cart = ({ cart, qty, qtyMinus, removeItemFromCart }) => {
   return (
@@ -74,6 +75,9 @@ const Cart = ({ cart, qty, qtyMinus, removeItemFromCart }) => {
         </div>
         <div className="checkout">
           <button>Checkout</button>
+          <Link to="/cart">
+            <button>Go to Cart</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,0 +1,12 @@
+.routes {
+  width: 100%;
+  display: flex;
+}
+
+.menu-product {
+  width: 20%;
+  height: 100%;
+}
+.right-page {
+  width: 80%;
+}
