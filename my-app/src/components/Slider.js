@@ -40,15 +40,15 @@ function Slider() {
       <div className="feature">
         <Link className="feature-list" to="/">
           <i class="bx bx-store"></i>
-          Sell Your Products
+          sell product
         </Link>
         <Link className="feature-list" to="/Service">
           <i class="bx bxs-donate-blood"></i>
-          Service Provider
+          service oprovider
         </Link>
         <Link className="feature-list" to="/Shop">
           <i class="bx bx-station"></i>
-          Nearby Enterprise
+          nearby enterprise
         </Link>
         <div className="location">
           <div className="wrap-location">
@@ -56,20 +56,13 @@ function Slider() {
               <img src={loca} alt="location" />
               <div className="location-text">
                 <i className="bx bx-chevron-left"></i>
-                <div className="wrap-text">
-                  <i class="bx bxs-map"></i>
-                  <p>Location</p>
-                  <p>សង្កាត់ទឹកថ្លា Sangkat Tuek Thla ភ្នំពេញ</p>
-                  <p>10km 30s</p>
-                </div>
+                <p>Location</p>
                 <i className="bx bx-chevron-right "></i>
               </div>
             </div>
           </div>
         </div>
-        <Link className="feature-list" to="/Contact">
-          ALL PRODUCTS TYPE
-        </Link>
+        <Link className="feature-list">All Product Type</Link>
       </div>
       <div className="banner">
         <img src={allImage[selectImage]} alt="all" />
