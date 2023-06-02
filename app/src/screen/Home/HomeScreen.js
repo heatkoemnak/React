@@ -12,7 +12,7 @@ import Cart from "../../component/Cart";
 import Navbar from "../../component/navbar";
 import MenuProduct from "../../component/MenuProduct";
 import Header from "../../component/header";
-import DisplayCart from "../../component/DisplayCart";
+// import DisplayCart from "../../component/DisplayCart";
 
 const HomeScreen = () => {
   const [product] = useState(data);
@@ -52,13 +52,7 @@ const HomeScreen = () => {
       <Slider />
       <Materails />
       <SeeMore />
-      <DisplayCart
-        cart={cart}
-        removeItemFromCart={removeItemFromCart}
-        qty={qty}
-        qtyMinus={qtyMinus}
-      ></DisplayCart>
-      
+
       {ShowCart && (
         <Cart
           cart={cart}

@@ -1,5 +1,7 @@
 .menu-category {
-  background-color: rgb(91, 91, 91);
+  width: 20%;
+  height: 100%;
+  background-color: rgb(47, 39, 70);
 }
 .menu-item {
   align-items: center;

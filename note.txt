@@ -4,3 +4,6 @@ npm install react-dom
 //install react-router-dom
 npm install react-router-dom
 
+npm install react-slick --save
+
+npm install slick-carousel --save

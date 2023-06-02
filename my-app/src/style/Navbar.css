@@ -61,13 +61,23 @@ button {
   position: relative;
   padding: 15px;
 }
-
+.all-menu {
+  border: #3a3636;
+  width: 130px;
+  padding: 11.5px;
+  cursor: pointer;
+}
+.all-menu i {
+  color: #6f6f6f;
+  cursor: pointer;
+  width: 100%;
+}
 .search-bar {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
-  width: 70%;
+  background-color: aliceblue;
+  width: 65%;
 }
 .search-input {
   width: 100%;

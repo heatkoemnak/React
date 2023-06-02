@@ -1,12 +1,21 @@
 .routes {
   width: 100%;
+  margin: 0 auto;
   display: flex;
+  background-color: rgb(47, 39, 70);
 }
 
 .menu-product {
   width: 20%;
-  height: 100%;
 }
 .right-page {
   width: 80%;
+}
+.browse {
+  display: flex;
+  background-color: aquamarine;
+}
+.product-right-page {
+  width: 80%;
+  background-color: beige;
 }

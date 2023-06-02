@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Link } from "react-router-dom";
 import "../style/Navbar.css";
 import logo from "../asset/anti.png";
 import "../App.css";
 
-function Navbar() {
+function Navbar(props) {
   return (
     <nav className="nav-bar">
       <div className="nav-container">
@@ -14,7 +14,16 @@ function Navbar() {
             <img src={logo} alt="anti" width={300} />
           </Link>
         </div>
+
         <div className="search-bar">
+          <button
+            className="all-menu"
+            onClick={() => {
+              props.handleMenu(true);
+            }}
+          >
+            <i className="menu-text">All Categories</i>
+          </button>
           <input
             className="search-input"
             type="text"

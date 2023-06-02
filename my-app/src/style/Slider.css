@@ -8,6 +8,7 @@
   width: 100%;
   font-size: 1.5rem;
   cursor: pointer;
+  margin: 0 auto;
 }
 .feature {
   display: flex;
@@ -30,7 +31,7 @@
 }
 .location {
   display: flex;
-  background-color:green;
+  background-color: green;
   color: var(--white-secondary-color);
   width: 90%;
   margin: 0.5px auto;

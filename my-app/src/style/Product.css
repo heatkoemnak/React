@@ -1,0 +1,23 @@
+.Product {
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-container {
+  display: block;
+  background-color: rgb(185, 185, 185);
+  width: 233px;
+  margin: 20px;
+  cursor: pointer;
+}
+.product:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.product-image img {
+  width: 100%;
+  height: 250px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+}

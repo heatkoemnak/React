@@ -9,9 +9,8 @@ function Navbar(props) {
     <>
       <nav className="nav-bar">
         <div className="logo">
-          {" "}
           <Link className="item" to="/">
-            <img src={logo} alt="anti" />
+            <img src={logo} alt="anti" width={200} />
           </Link>
         </div>
 

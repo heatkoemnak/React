@@ -6,7 +6,8 @@ function MenuProduct() {
   return (
     <div className="menu-category">
       <div className="menu-item">
-        <i className="bx bx-menu item"></i>
+        <i class="fa-thin fa-delete-left"></i>
+
         <Link className="item" to="/">
           All
         </Link>
