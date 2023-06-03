@@ -12,7 +12,7 @@ function MenuProduct() {
           All
         </Link>
         <Link className="item" to="/Fashion">
-          Fashions
+          Clothes
         </Link>
         <Link className="item" to="/Shoes">
           Shoes
