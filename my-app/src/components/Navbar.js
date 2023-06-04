@@ -1,4 +1,5 @@
-import React from "react";
+import { useContext } from "react";
+import CartContext from "../CartContext";
 
 import { Link } from "react-router-dom";
 import "../style/Navbar.css";
@@ -6,6 +7,8 @@ import logo from "../asset/anti.png";
 import "../App.css";
 
 function Navbar(props) {
+  const { cart } = useContext(CartContext);
+
   return (
     <nav className="nav-bar">
       <div className="nav-container">
@@ -19,7 +22,7 @@ function Navbar(props) {
           <button
             className="all-menu"
             onClick={() => {
-              props.handleMenu(true);
+              props.handleMenu(false);
             }}
           >
             <i className="menu-text">All Categories</i>
@@ -35,7 +38,7 @@ function Navbar(props) {
           <Link to="/cart">
             <i className="bx bxs-cart-download cart-icon ">
               <div className="count-item">
-                <span className="value-count">0</span>
+                <span className="value-count">{cart.length}</span>
               </div>
             </i>
           </Link>
