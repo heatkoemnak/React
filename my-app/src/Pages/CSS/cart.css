@@ -1,4 +1,9 @@
 .cart-list {
-  width: 20%;
+  margin: 0 5px;
+  width: 30%;
   background-color: #76ff7a;
+}
+
+.cart-item {
+  display: flex;
 }
