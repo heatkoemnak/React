@@ -1,5 +1,6 @@
 import React from "react";
 import "../Pages/CSS/cart.css";
+
 function Cart({ cart }) {
   return (
     <div className="cart-list">
@@ -7,6 +8,10 @@ function Cart({ cart }) {
       {cart.map((cartItem) => {
         return (
           <div className="cart-item" key={cartItem.id}>
+            <div>
+              <img src={cartItem.image} alt="" width={60} height={60}></img>
+            </div>
+
             <div>{cartItem.name}</div>
             <div>{cartItem.price}</div>
             <div>{cartItem.quantity}</div>
