@@ -1,12 +1,11 @@
 .fashion-Product {
   margin: 0 30px;
-  border-bottom: 12px solid rgb(39, 47, 94);
 }
 
 .fashion {
   cursor: pointer;
-  padding: 0 10px 10px 0;
-  background-color: rgb(223, 232, 232);
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
 }
 .fashion img {
   width: 100%;
