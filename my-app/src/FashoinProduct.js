@@ -1,4 +1,4 @@
-import fashion1 from "./asset//fashion1.jpg";
+// import fashion1 from "./asset//fashion1.jpg";
 import fashion2 from "./asset/fashion2.webp";
 import fashion3 from "./asset/fashion3.jpg";
 import fashion4 from "./asset/fashion4.jpg";
