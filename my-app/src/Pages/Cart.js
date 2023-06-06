@@ -1,7 +1,10 @@
 import React from "react";
 import "../Pages/CSS/cart.css";
+import { useContext } from "react";
+import CartContext from "../CartContext";
+function Cart() {
+  const { cart } = useContext(CartContext);
 
-function Cart({ cart }) {
   return (
     <div className="cart-list">
       <h2>YOUR CART</h2>
