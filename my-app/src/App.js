@@ -1,9 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { CartProvider } from "./CartContext";
 
 import Home from "./Pages/Home";
-
 import Navbar from "./components/Navbar";
 import MenuProduct from "./components/MenuProduct";
 import Fashion from "./Pages/Fashion";
@@ -12,29 +10,31 @@ import Bag from "./Pages/Bag";
 import Watch from "./Pages/Watch";
 import Toy from "./Pages/Toy";
 import Accessary from "./Pages/Accessary";
-import Materails from "./components/Materails";
+// import Materails from "./components/Materails";
 import FashionSlider from "./SLIDER/FashionSlider";
 import ShoesSlider from "./SLIDER/ShoesSlider";
 import BagSlider from "./SLIDER/BagSlider";
 
 import React, { useState } from "react";
+import Cart from "./Pages/Cart";
+import { CartProvider } from "./CartContext";
 
 function App() {
   const [menu, setMenu] = useState(false);
   const handleMenu = () => {
     setMenu((menu) => !menu);
   };
+
   return (
     <div className="App">
       <CartProvider>
         <Router>
           <Navbar handleMenu={handleMenu}></Navbar>
-
           <div className="routes">
             {menu ? <MenuProduct /> : null}
             <div className="right-page">
               <Routes>
-                {/* <Route path="/cart" element={<CartDisplay />} /> */}
+                <Route path="/cart" element={<Cart />} />
                 <Route path="/fashion" element={<FashionSlider />} />
                 <Route path="/shoes" element={<ShoesSlider />} />
                 <Route path="/bag" element={<BagSlider />} />
@@ -45,6 +45,7 @@ function App() {
             </div>
           </div>
           <div className="browse">
+            {/* <Cart /> */}
             <div className="product-right-page">
               <Routes>
                 <Route path="/" element={<Home />} />
