@@ -41,14 +41,13 @@ function Footer() {
             >
               <i class="fab fa-instagram"></i>
             </a>
-
             <a
               class="btn btn-link btn-floating btn-lg text-dark m-1"
               href="#!"
               role="button"
               data-mdb-ripple-color="dark"
             >
-              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-linkedin"></i>s
             </a>
             <a
               class="btn btn-link btn-floating btn-lg text-dark m-1"
@@ -61,10 +60,7 @@ function Footer() {
           </section>
         </div>
 
-        <div
-          class="text-center text-dark p-3"
-          style="background-color: rgba(0, 0, 0, 0.2);"
-        >
+        <div class="text-center text-dark p-3">
           © 2020 Copyright:
           <a class="text-dark" href="https://mdbootstrap.com/">
             MDBootstrap.com
