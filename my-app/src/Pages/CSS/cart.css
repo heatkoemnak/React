@@ -1,9 +1,110 @@
-.cart-list {
-  margin: 20px;
-  width: 100%;
-  background-color: #f4e9e9;
-}
-
-.cart-item {
+.cart {
   display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+p {
+  text-align: center;
+  color: rgb(0, 89, 255);
+  cursor: pointer;
+}
+.cart-list {
+  width: 50%;
+  margin-bottom: 30px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #dbdada;
+}
+.cart-header {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #dddcdc;
+}
+.cart-header i {
+  font-size: 30px;
+  color: #990606;
+  cursor: pointer;
+}
+.cart-list h2 {
+  text-align: center;
+  color: #796767;
+}
+.cart-item-name {
+  font-size: 15px;
+  color: #349043;
+  font-weight: 600;
+}
+.cart-item-price {
+  font-size: 20px;
+  color: #796767;
+}
+.cart-item {
+  width: 70%;
+  margin: 10px auto;
+  display: flex;
+  border-radius: 11px;
+  background-color: rgb(255, 255, 255);
+}
+.cart-image {
+  width: 80%;
+  display: flex;
+  border-radius: 11px;
+  border: 1px solid rgb(234, 248, 231);
+  background-color: rgb(240, 243, 240);
+}
+.cart-image img {
+  border-radius: 10px;
+}
+.cart-text {
+  width: 50%;
+  margin: 10px;
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-size: medium;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.delete {
+  width: 30%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+.delete i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(200, 1, 1);
+  font-size: 30px;
+  cursor: pointer;
+}
+.total-price {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  font-size: 20px;
+  color: #9a0606;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.Total{
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  font-size: 20px;
+  color: #9a0606;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.payment {
+  float: right;
+  width: 30%;
+  margin-bottom: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #dcd1d1;
+  padding: 10px;
 }
