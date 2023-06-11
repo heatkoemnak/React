@@ -14,7 +14,6 @@ function Cart() {
             <div>
               <img src={cartItem.image} alt="" width={60} height={60}></img>
             </div>
-
             <div>{cartItem.name}</div>
             <div>{cartItem.price}</div>
             <div>{cartItem.quantity}</div>
