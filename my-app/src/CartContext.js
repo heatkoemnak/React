@@ -21,9 +21,19 @@ export function CartProvider({ children }) {
       { ...product, ...fashion, ...shoes, ...bag, ...watch, quantity: 1 },
     ]);
   };
+
   return (
     <CartContext.Provider
-      value={{ cart, product, fashion, shoes, bag, watch, addToCart }}
+      value={{
+        cart,
+        product,
+        fashion,
+        shoes,
+        bag,
+        watch,
+
+        addToCart,
+      }}
     >
       {children}
     </CartContext.Provider>
