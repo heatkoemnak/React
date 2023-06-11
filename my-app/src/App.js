@@ -34,7 +34,6 @@ function App() {
             {menu ? <MenuProduct /> : null}
             <div className="right-page">
               <Routes>
-                <Route path="/cart" element={<Cart />} />
                 <Route path="/fashion" element={<FashionSlider />} />
                 <Route path="/shoes" element={<ShoesSlider />} />
                 <Route path="/bag" element={<BagSlider />} />
@@ -44,6 +43,10 @@ function App() {
               </Routes>
             </div>
           </div>
+          <Routes>
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+
           <div className="browse">
             {/* <Cart /> */}
             <div className="product-right-page">
