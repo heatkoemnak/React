@@ -21,6 +21,26 @@ export function CartProvider({ children }) {
       { ...product, ...fashion, ...shoes, ...bag, ...watch, quantity: 1 },
     ]);
   };
+  const removeItemFromCart = (id) => {
+    setCart(cart.filter((item) => item.id !== id));
+  };
+
+  const qty = (id) => {
+    setCart(
+      cart.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+      )
+    );
+  };
+  const qtyMinus = (id) => {
+    setCart(
+      cart.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity - 1 } : item
+      )
+    );
+  }
+
+
 
   return (
     <CartContext.Provider
@@ -31,6 +51,9 @@ export function CartProvider({ children }) {
         shoes,
         bag,
         watch,
+        qtyMinus,
+        qty,
+        removeItemFromCart,
 
         addToCart,
       }}
