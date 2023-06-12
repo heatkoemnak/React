@@ -9,8 +9,7 @@ import Shoes from "./Pages/Shoes";
 import Bag from "./Pages/Bag";
 import Watch from "./Pages/Watch";
 import Toy from "./Pages/Toy";
-import Accessary from "./Pages/Accessary";
-// import Materails from "./components/Materails";
+import Accessory from "./Pages/Accessory";
 import FashionSlider from "./SLIDER/FashionSlider";
 import ShoesSlider from "./SLIDER/ShoesSlider";
 import BagSlider from "./SLIDER/BagSlider";
@@ -39,7 +38,7 @@ function App() {
                 <Route path="/bag" element={<BagSlider />} />
                 <Route path="/watch" element={<Watch />} />
                 <Route path="/toy" element={<Toy />} />
-                <Route path="/accessary" element={<Accessary />} />
+                <Route path="/accessory" element={<Accessory />} />
               </Routes>
             </div>
           </div>
@@ -48,7 +47,6 @@ function App() {
           </Routes>
 
           <div className="browse">
-            {/* <Cart /> */}
             <div className="product-right-page">
               <Routes>
                 <Route path="/" element={<Home />} />
@@ -57,11 +55,10 @@ function App() {
                 <Route path="/bag" element={<Bag />} />
                 <Route path="/watch" element={<Watch />} />
                 <Route path="/toy" element={<Toy />} />
-                <Route path="/accessary" element={<Accessary />} />
+                <Route path="/accessory" element={<Accessory />} />
               </Routes>
             </div>
           </div>
-          {/* <Materails /> */}
         </Router>
       </CartProvider>
     </div>
