@@ -22,7 +22,7 @@ function Product() {
             <div className="product-name">{productItem.name}</div>
             <div className="product-price">${productItem.price}</div>
             <div className="product-description">{productItem.description}</div>
-            <div className="product-action">
+            <div className="product-add_to_cart">
               <button onClick={() => addToCart(productItem)}>
                 Add to cart
               </button>
