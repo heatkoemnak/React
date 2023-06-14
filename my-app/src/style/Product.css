@@ -26,6 +26,9 @@
 }
 
 .product-add_to_cart {
-  background-color: chartreuse;
   border: none;
+}
+.product-add_to_cart button {
+  color: white;
+  padding: 0.8rem 3rem;
 }
