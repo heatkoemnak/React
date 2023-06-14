@@ -25,4 +25,7 @@
   font-weight: 600;
 }
 
-
+.product-add_to_cart {
+  background-color: chartreuse;
+  border: none;
+}
