@@ -30,5 +30,6 @@
 }
 .product-add_to_cart button {
   color: white;
-  padding: 0.8rem 3rem;
+  padding: 0.8rem 2rem;
+  background-color: chartreuse;
 }
