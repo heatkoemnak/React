@@ -14,15 +14,15 @@ function App() {
     <div className="App">
       <Router>
         <Navbar></Navbar>
-        <div className="routes">
-          <div className="right-page">
+        <div>
+          <div>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
               <Route path="/team" element={<Team />} />
               <Route path="/shop" element={<Shop />} />
-              <Route path="/shop" element={<Cart />} />
+              <Route path="/cart" element={<Cart />} />
             </Routes>
           </div>
         </div>
@@ -76,7 +76,7 @@ function App() {
         />
         <div class="text-center space-y-2 sm:text-left">
           <div class="space-y-0.5">
-            <p class="text-lg text-black font-semibold">Erin Lindford</p>
+            <p class="text-lg text-black font-semibold">Erin Landform</p>
             <p class="text-slate-500 font-medium">Product Engineer</p>
           </div>
           <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
