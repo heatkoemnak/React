@@ -1,13 +1,13 @@
 import "./App.css";
-import Home from "./Pages/Home";
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 
-import BagSlider from "./Pages/Bag";
-import Watch from "./Pages/Watch";
-import Toy from "./Pages/Toy";
-import Accessory from "./Pages/Accessory";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from "./components/About";
+import Team from "./components/Team";
+import Shop from "./components/Shop";
+import Cart from "./components/Cart";
 
 function App() {
   return (
@@ -19,10 +19,10 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/bag" element={<BagSlider />} />
-              <Route path="/watch" element={<Watch />} />
-              <Route path="/toy" element={<Toy />} />
-              <Route path="/accessory" element={<Accessory />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/shop" element={<Shop />} />
+              <Route path="/shop" element={<Cart />} />
             </Routes>
           </div>
         </div>
