@@ -57,10 +57,12 @@ function Navbar(props) {
         hidden md:flex items-center space-x-4 text-black cursor-pointer 
         "
       >
-        <h2 className="hidden md:flex items-center space-x-4 text-black cursor-pointer">
+        <Link className="hover:text-green-300" to="/shop">
           Shop
-        </h2>
-        <div>Cart</div>
+        </Link>
+        <Link className="hover:text-green-300" to="/cart">
+          Cart
+        </Link>
         <h2 className="hover:text-green-300">Sign In</h2>
       </div>
     </nav>
