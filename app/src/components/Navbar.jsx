@@ -1,5 +1,8 @@
 import logo from "../asset/anti_logo.png";
 import "../App.css";
+import "../../src/";
+import Menu from "./Menu";
+
 import { Link } from "react-router-dom";
 
 function Navbar(props) {
@@ -13,7 +16,7 @@ function Navbar(props) {
           <img src={logo} alt="" width={100} />
         </div>
         <div className="flex items-center space-x-4 w-1000  text-black cursor-pointer">
-          <ul className="hidden md:flex items-center space-x-4 text-black cursor-pointer ">
+          <ul className="hidden md:flex font-smaller items-center space-x-4 text-black cursor-pointer ">
             <Link className="hover:text-green-300" to="/">
               Home
             </Link>
@@ -26,6 +29,7 @@ function Navbar(props) {
             <Link className="hover:text-green-300" to="/about">
               About
             </Link>
+            <Menu />
           </ul>
         </div>
       </div>
@@ -63,7 +67,12 @@ function Navbar(props) {
         <Link className="hover:text-green-300" to="/cart">
           Cart
         </Link>
-        <h2 className="hover:text-green-300">Sign In</h2>
+        <button
+          type="button"
+          class="text-white bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-100/50 dark:shadow-lg dark:shadow-lime-100/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        >
+          Sign Up
+        </button>
       </div>
     </nav>
   );
