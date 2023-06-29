@@ -8,7 +8,6 @@ module.exports = {
         primary: "#1e1e1e",
         secondary: "#2d2d2d",
       },
-      
     },
   },
   plugins: [require("flowbite/plugin")],
