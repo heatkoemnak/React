@@ -1,8 +1,8 @@
 import "./App.css";
 import Home from "./components/Home";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
-
+import Nav from './components/Nav'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Team from "./components/Team";
@@ -11,13 +11,13 @@ import Cart from "./components/Cart";
 import Sell from "./components/Sell";
 import SignUp from "./components/SignUp";
 
+
 function App() {
   return (
     <div className="App bg-gray-50">
-      {/* <SignUp /> */}
       <Router>
-        {/* <Nav/> */}
-        <Navbar />
+        <Nav/>
+        {/* <Navbar /> */}
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
