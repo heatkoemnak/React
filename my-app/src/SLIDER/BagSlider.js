@@ -7,7 +7,6 @@ import { useContext } from "react";
 import CartContext from "../CartContext";
 function BagSlider() {
   const { bag, addToCart } = useContext(CartContext);
-
   const settings = {
     // dots: true,
     // infinite: false,
@@ -48,16 +47,16 @@ function BagSlider() {
     <>
       <div className="fashion-Product">
         <Slider {...settings}>
-          {bag.map((bagitem) => {
+          {bag.map((bags) => {
             return (
               <div className="fashion">
                 <div className="fashion-img">
-                  <img src={bagitem.image} alt={bagitem.name} />
+                  <img src={bags.image} alt={bags} />
                 </div>
-                <div className="fashion-name">{bagitem.name}</div>
-                <div className="fashion-price">{bagitem.price}</div>
-                <div className="fashion-description">{bagitem.description}</div>
-                <button onClick={() => addToCart(bagitem)}>Add to cart</button>
+                <div className="fashion-name">{bags.name}</div>
+                <div className="fashion-price">{bags.price}</div>
+                <div className="fashion-description">{bags.description}</div>
+                <button onClick={() => addToCart(bags)}>Add to cart</button>
               </div>
             );
           })}
