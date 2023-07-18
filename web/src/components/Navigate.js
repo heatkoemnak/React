@@ -5,27 +5,27 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-
-import logo from "../asset/logo_brand.png";
+import logo from "../asset/anti.png";
 function Navigate() {
   return (
-    <Navbar expand="lg" className="bg ">
-      <Container className="m-20 ">
-        <Navbar.Brand href="/">
-          <img src={logo} class="img-fluid" alt="" width={100}/>
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container fluid>
+        <Navbar.Brand href="#" className="logo ">
+          <img src={logo} alt="" width={100} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0  "
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="/faq">FAQ</Nav.Link>
-            <Nav.Link href="/about"x>
-              About
-            </Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
-            <NavDropdown title="All Categories" id="navbarScrollingDropdown">
+            <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link href="#action2">Contact</Nav.Link>
+            <Nav.Link href="#">Shop</Nav.Link>
+          </Nav>
+          <Form className="d-flex w-50 align-center">
+            <NavDropdown title="Link" id="navbarScrollingDropdown bg-">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action
@@ -40,15 +40,14 @@ function Navigate() {
             <Form.Control
               type="search"
               placeholder="Search"
-              className="me-2 w-30"
+              className="me-2 w-20"
               aria-label="Search"
-              
             />
             
              <Button variant="outline-success">Search</Button>
              
           </Form>
-          <Button className="m-2">Sign Up</Button>
+          <Button className="m-2 ">Sign Up</Button>
         </Navbar.Collapse>
         
       </Container>
