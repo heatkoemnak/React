@@ -1,23 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import "./CSS/home.css";
-import PRODUCTS from "../HomeProduct";
 import Product from "../components/Product";
+import Slider from "../components/Slider";
 import "../style/Product.css";
-import Cart from "../Pages/Cart";
+import { useContext } from "react";
+import CartContext from "../CartContext";
 
 function Home() {
-  const [count, setCount] = useState(0);
-  const [product] = useState(PRODUCTS);
-  const [cart, setCart] = useState([]);
-  const addToCart = (product) => {
-    setCart([...cart, { ...product, quantity: 1 }]);
-    setCount(count + 1);
-  };
+  const { product, addToCart } = useContext(CartContext);
+
   return (
-    <div className="home">
-      <Cart cart={cart}></Cart>
+    <>
+      <div className="home">
+        <Slider />
+      </div>
       <Product product={product} addToCart={addToCart}></Product>
-    </div>
+    </>
   );
 }
 

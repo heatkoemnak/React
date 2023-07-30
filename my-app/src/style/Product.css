@@ -1,14 +1,15 @@
 .Product {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
   width: 100%;
+  margin: 0 auto;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 
 .product-container {
-  display: block;
-  background-color: rgb(185, 185, 185);
-  width: 233px;
+  background-color: rgb(255, 255, 255);
+  width: 257px;
   margin: 20px;
   cursor: pointer;
 }
@@ -18,6 +19,17 @@
 .product-image img {
   width: 100%;
   height: 250px;
-  /* border-top-left-radius: 10px;
-  border-top-right-radius: 10px; */
+}
+.product-name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.product-add_to_cart {
+  border: none;
+}
+.product-add_to_cart button {
+  color: white;
+  padding: 0.8rem 2rem;
+  background-color: chartreuse;
 }

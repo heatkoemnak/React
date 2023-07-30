@@ -2,14 +2,17 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import SHOES from "../ShoesProduct";
+import { useContext } from "react";
+import CartContext from "../CartContext";
 function ShoesSlider() {
+  const { shoes, addToCart } = useContext(CartContext);
+
   const setting = {
     // dots: true,
-    infinite: false,
+    // infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
@@ -44,16 +47,20 @@ function ShoesSlider() {
     <>
       <div className="fashion-Product">
         <Slider {...setting}>
-          {SHOES.map((fashion) => {
+          {shoes.map((shoesItems) => {
             return (
               <div className="fashion">
                 <div className="fashion-img">
-                  <img src={fashion.image} alt={fashion.name} />
+                  <img src={shoesItems.image} alt={shoesItems.name} />
                 </div>
-                <div className="fashion-name">{fashion.name}</div>
-                <div className="fashion-price">{fashion.price}</div>
-                <div className="fashion-description">{fashion.description}</div>
-                <button>Add to cart</button>
+                <div className="fashion-name">{shoesItems.name}</div>
+                <div className="fashion-price">{shoesItems.price}</div>
+                <div className="fashion-description">
+                  {shoesItems.description}
+                </div>
+                <button onClick={() => addToCart(shoesItems)}>
+                  Add to cart
+                </button>
               </div>
             );
           })}

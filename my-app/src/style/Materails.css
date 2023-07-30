@@ -1,5 +1,6 @@
 .materails {
-  width: 20%;
+  width: 100%;
   background-color: rgb(61, 61, 80);
   color: white;
+  display: flex;
 }

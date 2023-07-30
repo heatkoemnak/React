@@ -2,14 +2,17 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import FASHION from "../FashoinProduct";
 import "../Pages/CSS/fashion.css";
+import { useContext } from "react";
+import CartContext from "../CartContext";
 function FashionSlider() {
+  const { fashion, addToCart } = useContext(CartContext);
   const settings = {
     // dots: true,
-    infinite: false,
+    // infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
@@ -44,7 +47,7 @@ function FashionSlider() {
     <>
       <div className="fashion-Product">
         <Slider {...settings}>
-          {FASHION.map((fashion) => {
+          {fashion.map((fashion) => {
             return (
               <div className="fashion">
                 <div className="fashion-img">
@@ -53,7 +56,7 @@ function FashionSlider() {
                 <div className="fashion-name">{fashion.name}</div>
                 <div className="fashion-price">{fashion.price}</div>
                 <div className="fashion-description">{fashion.description}</div>
-                <button>Add to cart</button>
+                <button onClick={() => addToCart(fashion)}>Add to cart</button>
               </div>
             );
           })}

@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../style/Slider.css";
 import "../App.css";
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import image1 from "../asset/banner4.jpg";
 import image3 from "../asset/banner5.jpg";
 import image4 from "../asset/s001.png";
@@ -12,7 +14,49 @@ import image10 from "../asset/banner10.jpg";
 
 import loca from "../asset/loca.avif";
 
-function Slider() {
+function CamSlider() {
+  const settings = {
+    // dots: true,
+    lazyLoad: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 2,
+  };
+  const location = [
+    {
+      id: 1,
+      name: "Hà Nội",
+      image: loca,
+    },
+    {
+      id: 2,
+      name: "Hồ Chí Minh",
+      image: loca,
+    },
+    {
+      id: 3,
+      name: "Đà Nẵng",
+      image: loca,
+    },
+    {
+      id: 1,
+      name: "Hà Nội",
+      image: loca,
+    },
+    {
+      id: 2,
+      name: "Hồ Chí Minh",
+      image: loca,
+    },
+    {
+      id: 3,
+      name: "Đà Nẵng",
+      image: loca,
+    },
+  ];
+
   const [selectImage, setSelectImage] = useState(1);
   const [allImage] = useState([
     image1,
@@ -23,7 +67,7 @@ function Slider() {
     image10,
   ]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
       if (selectImage < allImage.length - 1) {
         setSelectImage(selectImage + 1);
@@ -36,39 +80,47 @@ function Slider() {
   });
 
   return (
-    <div className="campagn">
-      <div className="feature">
-        <Link className="feature-list" to="/">
-          <i class="bx bx-store"></i>
-          sell product
-        </Link>
-        <Link className="feature-list" to="/Service">
-          <i class="bx bxs-donate-blood"></i>
-          service oprovider
-        </Link>
-        <Link className="feature-list" to="/Shop">
-          <i class="bx bx-station"></i>
-          nearby enterprise
-        </Link>
-        <div className="location">
-          <div className="wrap-location">
-            <div className="locate-imag">
-              <img src={loca} alt="location" />
-              <div className="location-text">
-                <i className="bx bx-chevron-left"></i>
-                <p>Location</p>
-                <i className="bx bx-chevron-right "></i>
-              </div>
-            </div>
+    <>
+      <div className="main-campagn">
+        <div className="feature">
+          <Link className="feature-list" to="/">
+            <i class="bx bx-store"></i>
+            sell product
+          </Link>
+          <Link className="feature-list" to="/Service">
+            <i class="bx bxs-donate-blood"></i>
+            service oprovider
+          </Link>
+          <Link className="feature-list" to="/Shop">
+            <i class="bx bx-station"></i>
+            nearby enterprise
+          </Link>
+          <div className="location">
+            <Slider {...settings}>
+              {location.map((locationItems) => {
+                return (
+                  <div className="location-item" key={locationItems.id}>
+                    <div className="location-img">
+                      <img
+                        src={locationItems.image}
+                        alt={locationItems.name}
+                        width={210}
+                      />
+                    </div>
+                    <div className="location-name">{locationItems.name}</div>
+                  </div>
+                );
+              })}
+            </Slider>
           </div>
+          <Link className="feature-list">All Product Type</Link>
         </div>
-        <Link className="feature-list">All Product Type</Link>
+        <div className="banner">
+          <img src={allImage[selectImage]} alt="all" />
+        </div>
       </div>
-      <div className="banner">
-        <img src={allImage[selectImage]} alt="all" />
-      </div>
-    </div>
+    </>
   );
 }
 
-export default Slider;
+export default CamSlider;
