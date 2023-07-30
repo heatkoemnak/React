@@ -24,8 +24,18 @@ function Navigate() {
             <Nav.Link href="#action2">Contact</Nav.Link>
             <Nav.Link href="#">Shop</Nav.Link>
           </Nav>
+<<<<<<< HEAD
           <Form className="d-flex w-50 align-center">
             <NavDropdown title="Link" id="navbarScrollingDropdown bg-">
+=======
+          <Form
+            className="d-flex w-50
+          justify-content-between align-items-center mx-auto mt-md-n6
+          mb-md-n6 bg-white border rounded
+          "
+          >
+            <NavDropdown title="All Categories" id="navbarScrollingDropdown ">
+>>>>>>> ab1bcbb (sc)
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action
