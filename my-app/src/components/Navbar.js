@@ -27,12 +27,11 @@ function Navbar(props) {
             <Link to="/">
               <ListItem>Home</ListItem>
             </Link>
-
-            
             <ListItem>Features</ListItem>
-            <ListItem>FAQ</ListItem>
             <ListItem>About</ListItem>
             <ListItem>Contact</ListItem>
+            <ListItem>FAQ</ListItem>
+
           </List>
         </Links>
 
