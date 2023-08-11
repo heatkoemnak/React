@@ -17,7 +17,7 @@ import BagSlider from "./SLIDER/BagSlider";
 import React, { useState } from "react";
 import Cart from "./Pages/Cart";
 import { CartProvider } from "./CartContext";
-import HomeSection from "./Section/HomeSection";
+import HomeSection from "./Section/Home/HomeSection";
 import AboutSection from "./Section/About/AboutSection";
 
 function App() {
