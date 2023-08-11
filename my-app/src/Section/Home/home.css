@@ -27,3 +27,25 @@
     }
 
 }
+.summary{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+.summary > div{
+    width: 250px;
+    background-color: rgb(199, 198, 198);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
