@@ -1,17 +1,19 @@
 import React from 'react'
 import { styled } from "styled-components";
 import landGreen from "../../asset/land-green.jpg"
-import {IconContext} from 'react-icons';
-
+import { VscOpenPreview } from "react-icons/vsc";
+import { FcTodoList } from "react-icons/fc";
+import { HiMiniUserPlus } from "react-icons/hi2";
+import { GiMaterialsScience } from "react-icons/gi";
 import './home.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
 import FeaturedSection from '../Featured/FeaturedSection';
+import Navbar from '../../components/Navbar';
 
 const MainContainer=styled.div`
     width:100%;
-    height:100vh;
     align-items:center;
     background-color: #197a12;
     background-image: linear-gradient(45deg, #197a12 0%, #5ed015 100%);
@@ -39,6 +41,7 @@ const Title = styled.div`
     position:absolute;
     top: 20%; 
     left: 50%;
+    width:100%
     font-size:2rem;
     font-weight: 500;
     text-align: center;
@@ -49,12 +52,6 @@ const Title = styled.div`
     font-family: 'Nunito Sans', sans-serif;
 
 `
-const Image = styled.div`
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-    `
 
 const Search = styled.div`
     position:absolute;
@@ -100,17 +97,13 @@ const Search = styled.div`
     }
     `
 
-
-
 export default function HomeSection() {
   
   return (
     <>
+    <Navbar/>
     <MainContainer>
-        <IconContext.Provider value={{ size:'3rem', color:'#7cd553'}}>
-            <Image>
-                <img src={landGreen} alt="" height={500} width={1519}/>
-            </Image>
+            <img src={landGreen} alt="" height={500} width={1200}/>
             <Section>
                 <SearchANDTitle>
                     <Search>
@@ -126,8 +119,26 @@ export default function HomeSection() {
                     
                 </SearchANDTitle>
             </Section>
-    </IconContext.Provider>
     </MainContainer>
+    <div className='summary'>
+        <div>
+            <FcTodoList size='2rem'/>
+            <h2>Quality</h2>
+        </div>
+        <div>
+            <HiMiniUserPlus size='2rem'/>
+            <h2>Users</h2>
+        </div>
+        <div>
+                <GiMaterialsScience size='2rem'/>
+                <h2>Materials</h2>
+        </div>
+        <div>
+                <VscOpenPreview size='2rem'/>
+                <h2>Viewer</h2>
+        </div>
+
+    </div>
     <FeaturedSection/>
     
     </>

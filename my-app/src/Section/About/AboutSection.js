@@ -8,10 +8,7 @@ import chhaylin from "../../asset/chhaylin.jpg";
 import koemnak from "../../asset/koemnak.jpg";
 import { RxDoubleArrowDown } from "react-icons/rx";
 import { FaFacebook,FaGithub ,FaTwitterSquare} from "react-icons/fa";
-import {AiFillTwitterCircle} from 'react-icons/ai';
-
 import './about.css';
-import { IconContext } from 'react-icons';
 
 const Section = styled.div`
     display:flex;
@@ -108,14 +105,6 @@ export const Title = styled.div`
     }
 
 `
-// const H2 = styled.div`
-//     font-size:1.5rem;
-//     font-weight: 500;
-//     height:50px;
-//     color: rgb(53, 53, 53);
-//     text-align: center;
-//     font-family: 'Nunito Sans', sans-serif;
-// `
 const Button = styled.button`
 display;flex;
     align-items:center;
