@@ -18,7 +18,7 @@ import React, { useState } from "react";
 import Cart from "./Pages/Cart";
 import { CartProvider } from "./CartContext";
 import HomeSection from "./Section/HomeSection";
-import AboutSection from "./Section/AboutSection";
+import AboutSection from "./Section/About/AboutSection";
 
 function App() {
   const [menu, setMenu] = useState(false);
