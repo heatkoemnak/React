@@ -62,7 +62,7 @@ const Teams = styled.div`
         align-items: center;
         justify-content: center;
         padding: 10px;
-        // background-color:#f4f3fc;
+        background-color:red;
         h2{
             font-size: 1.2rem;
         }
