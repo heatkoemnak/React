@@ -2,18 +2,22 @@ import React from 'react'
 import { styled } from "styled-components";
 import landGreen from "../../asset/land-green.jpg"
 import { VscOpenPreview } from "react-icons/vsc";
-import { FcTodoList } from "react-icons/fc";
-import { HiMiniUserPlus } from "react-icons/hi2";
-import { GiMaterialsScience } from "react-icons/gi";
-import './home.css';
-
+import { MdStar,MdOutlineStarHalf,MdGppGood } from "react-icons/md";
+import { HiUsers } from "react-icons/hi";
+import { AiFillPlusCircle } from "react-icons/ai";
+import { FaCubesStacked,FaCubes } from "react-icons/fa6";
+import { BsFillEyeFill } from "react-icons/bs";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
+
+
+
 import FeaturedSection from '../Featured/FeaturedSection';
 import Navbar from '../../components/Navbar';
 
+import './home.css';
+
 const MainContainer=styled.div`
-    width:100%;
     align-items:center;
     background-color: #197a12;
     background-image: linear-gradient(45deg, #197a12 0%, #5ed015 100%);
@@ -21,12 +25,6 @@ const MainContainer=styled.div`
     z-index:-5;
 
 `
-const Section = styled.div`
-    width:100%;
-    height:100%;
-    background-color:red;
-`
-
 const SearchANDTitle=styled.div`
     width:100%;
     height:100%;
@@ -103,8 +101,7 @@ export default function HomeSection() {
     <>
     <Navbar/>
     <MainContainer>
-            <img src={landGreen} alt="" height={500} width={1200}/>
-            <Section>
+            <img src={landGreen} alt="" height={500}/>
                 <SearchANDTitle>
                     <Search>
                         <FontAwesomeIcon icon={faMagnifyingGlass}/>
@@ -114,28 +111,57 @@ export default function HomeSection() {
                     <Title>
                         <h1>Join With Us</h1>
                         <h2>To Protect Our Environment</h2>
-                        <Button>Get Start For Free</Button>
+                        <Button>Get Start Shopping Here</Button>
                     </Title>
                     
                 </SearchANDTitle>
-            </Section>
     </MainContainer>
-    <div className='summary'>
-        <div>
-            <FcTodoList size='2rem'/>
-            <h2>Quality</h2>
+    <div className='overview'>
+        <div className='card'>
+            <div className='left'>
+                <MdGppGood size='2rem' color='#4bd638' className='material-icon'/>
+                <p>Quality</p>
+            </div>
+            <div className='right'>
+                <h2>4.3</h2>
+                <MdStar color='#b2e92f'/>
+                <MdStar color='#b2e92f'/>
+                <MdOutlineStarHalf color='#b2e92f'/>
+                <h3>Ratting</h3>
+            </div>
         </div>
-        <div>
-            <HiMiniUserPlus size='2rem'/>
-            <h2>Users</h2>
+        <div className='card'>
+            <div className='left '>
+                <HiUsers size='2.2rem'color='#4bd638' className='material-icon' />
+                <p>Users</p>
+            </div>
+            <div className='right'>
+                <AiFillPlusCircle size='1.5rem'color='#4bd638'/>
+                <h2>254</h2>
+                <h3>Total</h3>
+            </div>
         </div>
-        <div>
-                <GiMaterialsScience size='2rem'/>
-                <h2>Materials</h2>
+        <div className='card'>
+            <div className='left'>
+                <FaCubesStacked  size='2.2rem' color='#4bd638' className='material-icon' />
+                <p>Materials</p>
+            </div>
+            <div className='right'>
+            <FaCubes size='1.5rem'color='#4bd638'/>
+                <h2>1506</h2>
+                <h3>Total</h3>
+            </div>
         </div>
-        <div>
-                <VscOpenPreview size='2rem'/>
-                <h2>Viewer</h2>
+        <div className='card'>
+            <div className='left'>
+                <VscOpenPreview size='2rem' color='#4bd638' className='material-icon'/>
+                <p>Viewer</p>
+            </div>
+            <div className='right'>
+                <BsFillEyeFill size='1.5rem'color='#4bd638'/>
+                <h2>2401</h2>
+                <h3>Total</h3>
+            </div>
         </div>
 
     </div>
