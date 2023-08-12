@@ -6,6 +6,11 @@
     padding: 25px;
     gap:15px;
     width: 400px;
+    &:hover{
+        transform: scaleY(1) translateY(-7%);
+        transition:.8s ease all ;
+        color: #000;
+    }
 
 
 }
