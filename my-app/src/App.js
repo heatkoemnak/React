@@ -18,6 +18,8 @@ import { CartProvider } from "./CartContext";
 import HomeSection from "./Section/Home/HomeSection";
 import AboutSection from "./Section/About/AboutSection";
 
+
+
 function App() {
   return (
 
