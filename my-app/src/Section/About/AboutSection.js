@@ -16,9 +16,8 @@ const Section = styled.div`
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     overflow-y: auto;
-
+    overflow:hidden;
     scrollbar-width: none;
-
     background-color:#220925;
 
     &::-webkit-scrollbar {
@@ -28,15 +27,16 @@ const Section = styled.div`
     }
 `
 const Teams = styled.div`
-    border-top:2px solid #dbdee6;
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #f5f9f9;
-    color: #fff;
     flex-direction: column;
     justify-content: center;
-   
+    background-color: #f5f9f9;
+    color: #fff;
+    border-top:2px solid #dbdee6;
+    
     @media screen and(max-width :768px){
         h1{
             font-size: 2rem;
@@ -69,20 +69,20 @@ const Teams = styled.div`
     @media screen and (max-width: 480px) {
         h1{
             font-size: 2rem;  
-            }
+        }
         div{
             h2{
                 font-size: 1.5rem;
-                }
+            }
             p{
                 font-size: 1rem;
-                }
-          }
+            }
+        }
+    }
 
    
 `
 const Team = styled.div`
-    width:100%;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
@@ -105,7 +105,7 @@ export const Title = styled.div`
     }
 
 `
-const Button = styled.button`
+export const Button = styled.button`
 display;flex;
     align-items:center;
     justify-content:space-between;
@@ -148,12 +148,9 @@ export default function AboutSection() {
                     <span>Role</span>
                     <p>Backend & Server Side</p>
                     <div className='icons'>
-                        
-                            <FaFacebook className='icon'/>
-                            <FaGithub className='icon'/>
-                            <FaTwitterSquare className='icon'/>
-                        
-
+                        <FaFacebook className='icon'/>
+                        <FaGithub className='icon'/>
+                        <FaTwitterSquare className='icon'/>
                     </div>
                     <Button>Read More..</Button>
                 </div>
