@@ -9,21 +9,7 @@ let userList=[
         name:"John",
         email:"john@gmail.com"
     },
-    // {
-    //     id:2,
-    //     name:"Jack",    
-    //     email:"jack@gmail.com"
-    // },
-    // {
-    //     id:3,
-    //     name:"Sok",
-    //     email:"sok@gmail.com"
-    // },
-    // {
-    //     id:4,
-    //     name:"Jane",
-    //     email:"jane@gmail.com"
-    // },
+   
 ]
 
 app.get("/users", (req, res) => {
@@ -34,6 +20,25 @@ app.get("/users", (req, res) => {
 app.post("/users",(req,res)=>{
     const newUser = req.body;
     userList.push(newUser);
+    res.json(userList);
+})
+app.put("/users",(req,res)=>{
+    const {id} = req.body;
+    const newUser = req.body;
+    userList.forEach((user,index)=>{
+        if(user.id === id){
+            userList[index]=newUser;
+        }
+    })
+    res.json(userList);
+})
+app.delete("/users",(req,res)=>{
+    const {id} = req.body;
+    userList.forEach((user,index)=>{
+        if(user.id === id){
+            userList.splice(index,1);
+        }
+    })
     res.json(userList);
 })
 app.listen('3001',(req,res)=>{
