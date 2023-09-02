@@ -1,0 +1,28 @@
+nav {
+  background-color: #fff;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.wrap-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+ul > li {
+  padding: 0 20px;
+}
