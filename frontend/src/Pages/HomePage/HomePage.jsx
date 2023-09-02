@@ -8,13 +8,14 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import Featured from '../Featured/Featured';
 import AboutPage from '../AboutPage/AboutPage';
 import Overview from '../Overview/Overview';
+import ContactPage from '../ContactPage/ContactPage';
 
 import './home.css';
 
 export default function HomePage() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <img className="banner-image" src={landGreen} alt="" />
 
       <SearchANDTitle>
@@ -37,6 +38,7 @@ export default function HomePage() {
       <Overview />
       <Featured />
       <AboutPage />
+      <ContactPage />
     </div>
   );
 }

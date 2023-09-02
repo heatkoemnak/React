@@ -23,12 +23,12 @@ ul {
   list-style: none;
   text-align: center;
 }
-ul > li {
+ul :link {
   padding: 0 20px;
-}
-ul > li:hover {
-  color: #026a3d;
-  cursor: pointer;
+  color: #fffefe;
+  transition: all 0.3s ease;
+  list-style: none;
+  text-decoration: none;
 }
 .form {
   display: flex;
@@ -37,12 +37,14 @@ ul > li:hover {
   gap: 20px;
   color: #fff;
 }
-.form > li {
-  padding: 10px 20px;
+.form > :link {
+  padding: 10px 10px;
   border-radius: 20px;
-  background-color: #1dac4d;
+  /* background-color: #1dac4d; */
   cursor: pointer;
+  list-style: none;
+  text-decoration: none;
 }
-.form > li:hover {
+.form > link:hover {
   color: #95ff00;
 }
