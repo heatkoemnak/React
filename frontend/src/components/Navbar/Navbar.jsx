@@ -15,10 +15,10 @@ function Navbar() {
           <li>About</li>
           <li>FQA</li>
         </ul>
-        <ul>
-          <li>Sign In</li>
-          <li>Sign Up</li>
-        </ul>
+        <div className='form'>
+          <li id="form">Sign In</li>
+          <li id="form">Sign Up</li>
+        </div>
       </div>
     </nav>
   );

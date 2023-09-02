@@ -26,3 +26,23 @@ ul {
 ul > li {
   padding: 0 20px;
 }
+ul > li:hover {
+  color: #026a3d;
+  cursor: pointer;
+}
+.form {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  gap: 20px;
+  color: #fff;
+}
+.form > li {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #1dac4d;
+  cursor: pointer;
+}
+.form > li:hover {
+  color: #95ff00;
+}
