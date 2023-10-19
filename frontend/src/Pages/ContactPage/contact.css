@@ -53,8 +53,11 @@
   display: flex;
   flex-direction: column;
 }
+
 .information {
   display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .input-container {
   display: flex;
